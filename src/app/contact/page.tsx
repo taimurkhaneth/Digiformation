@@ -27,9 +27,13 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
     try {
+      if (!supabase) {
+        throw new Error("Supabase not initialized");
+      }
       await supabase.from("contact_submissions").insert([form]);
       setSubmitted(true);
-    } catch {
+    } catch (err) {
+      console.error("Submission error:", err);
       alert("Something went wrong. Please try WhatsApp instead.");
     } finally {
       setLoading(false);
