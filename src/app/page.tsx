@@ -2,6 +2,7 @@
 
 import React, { useRef, useEffect, useState } from "react";
 import Link from "next/link";
+import { motion, useInView, useMotionValue, useSpring, animate } from "framer-motion";
 import {
   ArrowRight, Building2, Globe2, Layers, CreditCard,
   Zap, CheckCircle2,
