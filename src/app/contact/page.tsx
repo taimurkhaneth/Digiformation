@@ -1,11 +1,10 @@
 'use client';
 
 import React, { useState } from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  ArrowRight, CheckCircle2, MapPin, Mail, Phone, Clock,
-  CheckCircle, Send, MessageCircle, Star,
+  ArrowRight, MapPin, Mail, Phone, Clock,
+  CheckCircle, Send, MessageCircle,
 } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 

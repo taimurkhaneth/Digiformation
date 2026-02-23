@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   CheckCircle2, ArrowRight, Clock, ShieldCheck, Globe, Zap,
-  Sparkles, Building2, FileText, Hash, Star,
+  Sparkles, Building2, FileText, Hash,
 } from "lucide-react";
 
 const fadeUp = {

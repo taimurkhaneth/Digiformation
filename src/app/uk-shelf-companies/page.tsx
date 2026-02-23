@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, Building2, ArrowRight, CheckCircle2, TrendingUp, Zap, Layers, Filter } from "lucide-react";
+import { Search, Building2, ArrowRight, CheckCircle2, TrendingUp, Filter } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 
 const MOCK_COMPANIES = [
@@ -27,7 +27,7 @@ const BENEFITS = [
 ];
 
 export default function ShelfCompanies() {
-  const [companies, setCompanies] = useState<any[]>([]);
+  const [companies, setCompanies] = useState<typeof MOCK_COMPANIES>([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [vatFilter, setVatFilter] = useState<"all" | "vat" | "standard">("all");
@@ -36,6 +36,7 @@ export default function ShelfCompanies() {
     async function load() {
       setLoading(true);
       try {
+        if (!supabase) return;
         const { data } = await supabase.from("shelf_companies").select("*");
         setCompanies(data && data.length > 0 ? data : MOCK_COMPANIES);
       } catch {

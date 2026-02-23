@@ -2,12 +2,10 @@
 
 import React, { useRef, useEffect, useState } from "react";
 import Link from "next/link";
-import { motion, useInView, useMotionValue, useSpring, animate, AnimatePresence } from "framer-motion";
 import {
   ArrowRight, Building2, Globe2, Layers, CreditCard,
-  ShieldCheck, Zap, Clock, Users, CheckCircle2,
+  Zap, CheckCircle2,
   Star, TrendingUp, HeadphonesIcon, Award, Lock,
-  Sparkles, ChevronRight, MapPin,
 } from "lucide-react";
 
 /* ── Animated Counter ─────────────────────────────────────────────────── */
@@ -115,12 +113,6 @@ const PARTNERS = [
 ];
 
 export default function Home() {
-  const [activeTestimonial, setActiveTestimonial] = useState(0);
-
-  useEffect(() => {
-    const t = setInterval(() => setActiveTestimonial(p => (p + 1) % TESTIMONIALS.length), 5000);
-    return () => clearInterval(t);
-  }, []);
 
   return (
     <div style={{ background: "#0a0a0a", fontFamily: "'Space Grotesk', sans-serif" }}>
@@ -361,7 +353,7 @@ export default function Home() {
                       y: -6,
                       borderColor: "rgba(16,185,129,0.3)",
                       boxShadow: "0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(16,185,129,0.06)",
-                    } as any}
+                    }}
                     style={{
                       background: "#111111",
                       borderRadius: 20,
@@ -590,7 +582,7 @@ export default function Home() {
                   pointerEvents: "none",
                   userSelect: "none",
                 }}>
-                  "
+                  &quot;
                 </div>
 
                 {/* Stars */}
@@ -604,7 +596,7 @@ export default function Home() {
                   fontSize: 15, color: "#d1d5db", lineHeight: 1.75,
                   marginBottom: 28, flexGrow: 1, fontStyle: "italic",
                 }}>
-                  "{t.text}"
+                  &quot;{t.text}&quot;
                 </p>
 
                 <div style={{ display: "flex", alignItems: "center", gap: 12 }}>

@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  Globe, Code2, Smartphone, ShoppingCart, Zap, BarChart3,
+  Globe, Code2, Smartphone, ShoppingCart, Zap,
   CheckCircle2, ArrowRight, Layers, Palette, Search, Shield,
   Clock, Star
 } from "lucide-react";
@@ -312,7 +312,7 @@ export default function WebDev() {
             <span className="section-label" style={{ marginBottom: 18, display: "inline-block" }}>Pricing</span>
             <h2 className="section-heading" style={{ marginBottom: 14 }}>Transparent, fixed pricing</h2>
             <p style={{ fontSize: 16, color: "#6b7280", maxWidth: 440, margin: "0 auto" }}>
-              No surprises. Pick a package and we'll deliver exactly what's promised.
+              No surprises. Pick a package and we&apos;ll deliver exactly what&apos;s promised.
             </p>
           </motion.div>
 
@@ -396,7 +396,7 @@ export default function WebDev() {
                 Ready to build something great?
               </h2>
               <p style={{ fontSize: 17, color: "#6b7280", maxWidth: 480, margin: "0 auto 36px", lineHeight: 1.7 }}>
-                Tell us about your project and we'll give you a free quote and timeline within 24 hours.
+                Tell us about your project and we&apos;ll give you a free quote and timeline within 24 hours.
               </p>
               <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
                 <Link href="/contact" className="btn-primary" style={{ fontSize: 15, padding: "15px 32px" }}>

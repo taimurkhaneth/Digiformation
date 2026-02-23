@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Building2, Mail, Phone, MapPin, ArrowUpRight, Twitter, Linkedin, Instagram, Zap } from "lucide-react";
+import { Building2, Mail, Phone, MapPin, Twitter, Linkedin, Instagram, Zap } from "lucide-react";
 
 const SERVICES = [
   { label: "UK LTD Formation", href: "/ltd-formation-services" },

@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, CreditCard, CheckCircle2, Clock } from "lucide-react";
+import { ArrowRight, CheckCircle2, Clock } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -192,7 +192,7 @@ export default function Banking() {
             <span className="section-label" style={{ marginBottom: 18, display: "inline-block" }}>Payment Gateways</span>
             <h2 className="section-heading" style={{ marginBottom: 16 }}>Accept payments worldwide</h2>
             <p style={{ fontSize: 16, color: "#6b7280", maxWidth: 460 }}>
-              Get verified merchant accounts with the world's leading payment processors.
+              Get verified merchant accounts with the world&apos;s leading payment processors.
             </p>
           </motion.div>
 
