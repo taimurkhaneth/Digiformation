@@ -26,11 +26,14 @@ const BENEFITS = [
   { icon: Building2, label: "Clean history", desc: "No financial obligations, CCJs, or previous trading activity." },
 ];
 
+const ITEMS_PER_PAGE = 8;
+
 export default function ShelfCompanies() {
   const [companies, setCompanies] = useState<typeof MOCK_COMPANIES>([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [vatFilter, setVatFilter] = useState<"all" | "vat" | "standard">("all");
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     async function load() {
@@ -222,91 +225,132 @@ export default function ShelfCompanies() {
               ))}
             </div>
           ) : filtered.length > 0 ? (
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 20 }}>
-              <AnimatePresence>
-                {filtered.map((c, i) => (
-                  <motion.div
-                    key={c.id} layout
-                    variants={fadeUp}
-                    initial="hidden" animate="visible" custom={i}
-                    whileHover={{ y: -5 }}
-                    style={{
-                      background: "#111111", borderRadius: 20,
-                      border: "1px solid rgba(255,255,255,0.07)",
-                      padding: "28px 24px",
-                      transition: "all 0.3s ease",
-                      position: "relative", overflow: "hidden",
-                      cursor: "pointer",
-                    }}
-                  >
-                    <div style={{
-                      position: "absolute", top: 0, left: 0, right: 0, height: 2,
-                      background: "linear-gradient(90deg, #10b981, transparent)",
-                    }} />
-
-                    <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", marginBottom: 18 }}>
+            <>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 20 }}>
+                <AnimatePresence mode="popLayout">
+                  {filtered.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE).map((c, i) => (
+                    <motion.div
+                      key={c.id} layout
+                      variants={fadeUp}
+                      initial="hidden" animate="visible" custom={i}
+                      whileHover={{ y: -5 }}
+                      style={{
+                        background: "#111111", borderRadius: 20,
+                        border: "1px solid rgba(255,255,255,0.07)",
+                        padding: "28px 24px",
+                        transition: "all 0.3s ease",
+                        position: "relative", overflow: "hidden",
+                        cursor: "pointer",
+                      }}
+                    >
                       <div style={{
-                        width: 44, height: 44,
-                        background: "rgba(16,185,129,0.1)",
-                        border: "1px solid rgba(16,185,129,0.2)",
-                        borderRadius: 12,
-                        display: "flex", alignItems: "center", justifyContent: "center",
-                      }}>
-                        <Building2 style={{ width: 20, height: 20, color: "#10b981" }} />
-                      </div>
-                      {c.vat_registered && (
-                        <span style={{
-                          fontSize: 10, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase",
-                          color: "#10b981",
-                          background: "rgba(16,185,129,0.1)",
-                          border: "1px solid rgba(16,185,129,0.25)",
-                          padding: "3px 8px", borderRadius: 99,
-                        }}>VAT</span>
-                      )}
-                    </div>
+                        position: "absolute", top: 0, left: 0, right: 0, height: 2,
+                        background: "linear-gradient(90deg, #10b981, transparent)",
+                      }} />
 
-                    <h3 style={{
-                      fontFamily: "'Outfit', sans-serif",
-                      fontWeight: 800, fontSize: 14, color: "#ffffff",
-                      lineHeight: 1.4, marginBottom: 16,
-                    }}>{c.name}</h3>
-
-                    <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 20 }}>
-                      {[["Age", c.age], ["SIC Code", c.sic_code]].map(([k, v]) => (
-                        <div key={k} style={{ display: "flex", justifyContent: "space-between", fontSize: 12, paddingBottom: 8, borderBottom: "1px solid rgba(255,255,255,0.04)" }}>
-                          <span style={{ color: "#6b7280" }}>{k}</span>
-                          <span style={{ color: "#d1d5db", fontWeight: 600, fontFamily: k === "SIC Code" ? "monospace" : "inherit" }}>{v}</span>
-                        </div>
-                      ))}
-                    </div>
-
-                    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingTop: 16, borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-                      <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 26, fontWeight: 800, color: "#ffffff" }}>£{c.price}</span>
-                      <Link href="/contact"
-                        style={{
-                          display: "flex", alignItems: "center", gap: 5,
-                          fontSize: 12, fontWeight: 700, color: "#10b981",
+                      <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", marginBottom: 18 }}>
+                        <div style={{
+                          width: 44, height: 44,
                           background: "rgba(16,185,129,0.1)",
                           border: "1px solid rgba(16,185,129,0.2)",
-                          padding: "7px 14px", borderRadius: 8,
-                          transition: "all 0.2s ease",
-                        }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.background = "rgba(16,185,129,0.2)";
-                          e.currentTarget.style.borderColor = "rgba(16,185,129,0.4)";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.background = "rgba(16,185,129,0.1)";
-                          e.currentTarget.style.borderColor = "rgba(16,185,129,0.2)";
-                        }}
-                      >
-                        Acquire <ArrowRight style={{ width: 13, height: 13 }} />
-                      </Link>
-                    </div>
-                  </motion.div>
-                ))}
-              </AnimatePresence>
-            </div>
+                          borderRadius: 12,
+                          display: "flex", alignItems: "center", justifyContent: "center",
+                        }}>
+                          <Building2 style={{ width: 20, height: 20, color: "#10b981" }} />
+                        </div>
+                        {c.vat_registered && (
+                          <span style={{
+                            fontSize: 10, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase",
+                            color: "#10b981",
+                            background: "rgba(16,185,129,0.1)",
+                            border: "1px solid rgba(16,185,129,0.25)",
+                            padding: "3px 8px", borderRadius: 99,
+                          }}>VAT</span>
+                        )}
+                      </div>
+
+                      <h3 style={{
+                        fontFamily: "'Outfit', sans-serif",
+                        fontWeight: 800, fontSize: 14, color: "#ffffff",
+                        lineHeight: 1.4, marginBottom: 16,
+                      }}>{c.name}</h3>
+
+                      <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 20 }}>
+                        {[["Formation Date", c.age], ["Company Number", c.sic_code]].map(([k, v]) => (
+                          <div key={k} style={{ display: "flex", justifyContent: "space-between", fontSize: 12, paddingBottom: 8, borderBottom: "1px solid rgba(255,255,255,0.04)" }}>
+                            <span style={{ color: "#6b7280" }}>{k}</span>
+                            <span style={{ color: "#d1d5db", fontWeight: 600, fontFamily: k === "SIC Code" ? "monospace" : "inherit" }}>{v}</span>
+                          </div>
+                        ))}
+                      </div>
+
+                      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingTop: 16, borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+                        <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 26, fontWeight: 800, color: "#ffffff" }}>£{c.price}</span>
+                        <Link href="/contact"
+                          style={{
+                            display: "flex", alignItems: "center", gap: 5,
+                            fontSize: 12, fontWeight: 700, color: "#10b981",
+                            background: "rgba(16,185,129,0.1)",
+                            border: "1px solid rgba(16,185,129,0.2)",
+                            padding: "7px 14px", borderRadius: 8,
+                            transition: "all 0.2s ease",
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.background = "rgba(16,185,129,0.2)";
+                            e.currentTarget.style.borderColor = "rgba(16,185,129,0.4)";
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.background = "rgba(16,185,129,0.1)";
+                            e.currentTarget.style.borderColor = "rgba(16,185,129,0.2)";
+                          }}
+                        >
+                          Acquire <ArrowRight style={{ width: 13, height: 13 }} />
+                        </Link>
+                      </div>
+                    </motion.div>
+                  ))}
+                </AnimatePresence>
+              </div>
+              
+              {/* Pagination Controls */}
+              {Math.ceil(filtered.length / ITEMS_PER_PAGE) > 1 && (
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 16, marginTop: 48 }}>
+                  <button
+                    onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                    disabled={currentPage === 1}
+                    style={{
+                      padding: "10px 20px", borderRadius: 10, fontSize: 13, fontWeight: 700,
+                      background: currentPage === 1 ? "rgba(255,255,255,0.02)" : "rgba(255,255,255,0.06)",
+                      color: currentPage === 1 ? "#4b5563" : "#ffffff",
+                      border: "1px solid", borderColor: currentPage === 1 ? "rgba(255,255,255,0.02)" : "rgba(255,255,255,0.1)",
+                      cursor: currentPage === 1 ? "not-allowed" : "pointer",
+                      transition: "all 0.2s",
+                      fontFamily: "'Space Grotesk', sans-serif"
+                    }}
+                  >
+                    Previous
+                  </button>
+                  <span style={{ fontSize: 14, color: "#9ca3af", fontWeight: 600, fontFamily: "'Outfit', sans-serif" }}>
+                    Page <span style={{ color: "#ffffff" }}>{currentPage}</span> of {Math.ceil(filtered.length / ITEMS_PER_PAGE)}
+                  </span>
+                  <button
+                    onClick={() => setCurrentPage(prev => Math.min(Math.ceil(filtered.length / ITEMS_PER_PAGE), prev + 1))}
+                    disabled={currentPage === Math.ceil(filtered.length / ITEMS_PER_PAGE)}
+                    style={{
+                      padding: "10px 20px", borderRadius: 10, fontSize: 13, fontWeight: 700,
+                      background: currentPage === Math.ceil(filtered.length / ITEMS_PER_PAGE) ? "rgba(255,255,255,0.02)" : "rgba(255,255,255,0.06)",
+                      color: currentPage === Math.ceil(filtered.length / ITEMS_PER_PAGE) ? "#4b5563" : "#ffffff",
+                      border: "1px solid", borderColor: currentPage === Math.ceil(filtered.length / ITEMS_PER_PAGE) ? "rgba(255,255,255,0.02)" : "rgba(255,255,255,0.1)",
+                      cursor: currentPage === Math.ceil(filtered.length / ITEMS_PER_PAGE) ? "not-allowed" : "pointer",
+                      transition: "all 0.2s",
+                      fontFamily: "'Space Grotesk', sans-serif"
+                    }}
+                  >
+                    Next
+                  </button>
+                </div>
+              )}
+            </>
           ) : (
             <div style={{ textAlign: "center", padding: "80px 0" }}>
               <div style={{
@@ -321,7 +365,7 @@ export default function ShelfCompanies() {
               </div>
               <p style={{ color: "#6b7280", fontWeight: 600, marginBottom: 16 }}>No companies match your search.</p>
               <button
-                onClick={() => { setSearch(""); setVatFilter("all"); }}
+                onClick={() => { setSearch(""); setVatFilter("all"); setCurrentPage(1); }}
                 style={{ fontSize: 13, color: "#10b981", fontWeight: 700, background: "none", border: "none", cursor: "pointer" }}
               >
                 Reset filters
