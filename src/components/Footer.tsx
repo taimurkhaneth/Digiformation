@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Building2, Mail, Phone, MapPin, Twitter, Linkedin, Instagram, Zap } from "lucide-react";
+import { Building2, Mail, Phone, MapPin, Instagram, Zap, Facebook, Youtube, AtSign } from "lucide-react";
 
 const SERVICES = [
   { label: "UK LTD Formation", href: "/ltd-formation-services" },
@@ -20,9 +20,10 @@ const COMPANY = [
 ];
 
 const SOCIALS = [
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61579301672673&rdid=Cc9i3maJNLvbAbSq&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1D676UBQw5%2F#", label: "Facebook" },
+  { icon: Instagram, href: "https://www.instagram.com/digiformationltd?igsh=ejBoMmFsOXFpMmdw", label: "Instagram" },
+  { icon: Youtube, href: "https://www.youtube.com/@digiformationltd?si=wy_K54l1UISmVHJI", label: "YouTube" },
+  { icon: AtSign, href: "https://www.threads.com/@digiformationltd?invite=0", label: "Threads" },
 ];
 
 export function Footer() {
