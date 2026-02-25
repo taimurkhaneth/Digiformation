@@ -248,7 +248,7 @@ export function Footer() {
                 }}>
                   <Phone style={{ width: 14, height: 14, color: "#10b981" }} />
                 </div>
-                <span style={{ fontSize: 13, color: "#6b7280", fontWeight: 500 }}>+44 7478 077922</span>
+                <span style={{ fontSize: 13, color: "#6b7280", fontWeight: 500 }}>+92 316 4467464</span>
               </div>
 
               {/* Company registration */}

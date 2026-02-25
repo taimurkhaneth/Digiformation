@@ -116,7 +116,7 @@ export default function Contact() {
                   {[
                     { icon: MapPin, label: "Address", value: "71-75 Shelton Street, Covent Garden, London, WC2H 9JQ" },
                     { icon: Mail, label: "Email", value: "support@digiformation.uk" },
-                    { icon: Phone, label: "Phone / WhatsApp", value: "+44 7478 077922" },
+                    { icon: Phone, label: "Phone / WhatsApp", value: "+92 316 4467464" },
                   ].map((item) => (
                     <div key={item.label} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
                       <div style={{
@@ -171,7 +171,7 @@ export default function Contact() {
               </motion.div>
 
               {/* WhatsApp */}
-              <motion.a href="https://wa.me/447478077922" target="_blank" rel="noopener noreferrer"
+              <motion.a href="https://wa.me/923164467464" target="_blank" rel="noopener noreferrer"
                 initial={{ opacity: 0, x: -24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
                 whileHover={{ scale: 1.01, y: -2 }}
                 style={{
