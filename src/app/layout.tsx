@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Outfit } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import { SiteNav } from "@/components/SiteNav";
@@ -9,13 +9,6 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-space-grotesk",
   weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  variable: "--font-outfit",
-  weight: ["600", "700", "800"],
   display: "swap",
 });
 
@@ -46,13 +39,18 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${outfit.variable}`}
-      style={{ fontFamily: "'Space Grotesk', ui-sans-serif, system-ui, sans-serif" }}
+      className={`${spaceGrotesk.variable}`}
+      style={{ fontFamily: "'Space Grotesk', sans-serif" }}
     >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+      </head>
       <body
         className="antialiased"
         style={{
-          fontFamily: "'Space Grotesk', ui-sans-serif, system-ui, sans-serif",
+          fontFamily: "'Space Grotesk', sans-serif",
           background: "#0a0a0a",
           color: "#ffffff",
         }}

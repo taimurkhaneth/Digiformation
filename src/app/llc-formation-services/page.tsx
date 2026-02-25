@@ -33,7 +33,7 @@ const PACKAGES = [
   {
     name: "Silver", price: "200", emoji: "⭐", badge: "Most Popular",
     desc: "Complete package with a dedicated US address.",
-    color: "#10b981",
+    color: "#1d9cfe",
     features: [
       "Everything in Starter",
       "Unique Business Address",
@@ -104,7 +104,7 @@ export default function LLCFormation() {
         }} />
         <div style={{
           position: "absolute", top: -80, right: -80, width: 600, height: 500,
-          background: "radial-gradient(circle, rgba(16,185,129,0.1) 0%, transparent 65%)",
+          background: "radial-gradient(circle, rgba(29,156,254,0.1) 0%, transparent 65%)",
           filter: "blur(60px)", borderRadius: "50%", pointerEvents: "none",
         }} />
 
@@ -116,13 +116,13 @@ export default function LLCFormation() {
               US Company Formation
             </span>
             <h1 style={{
-              fontFamily: "'Outfit', sans-serif",
+              fontFamily: "'Syne', sans-serif",
               fontSize: "clamp(38px, 6vw, 70px)", fontWeight: 800,
               letterSpacing: "-0.045em", color: "#ffffff", lineHeight: 1.05, marginBottom: 22, maxWidth: 720,
             }}>
               Form your US LLC from{" "}
               <span style={{
-                background: "linear-gradient(135deg, #10b981, #34d399)",
+                background: "linear-gradient(135deg, #1d9cfe, #94a3b8)",
                 WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
               }}>anywhere</span>
             </h1>
@@ -160,15 +160,15 @@ export default function LLCFormation() {
               >
                 <div style={{
                   width: 42, height: 42,
-                  background: "rgba(16,185,129,0.1)",
-                  border: "1px solid rgba(16,185,129,0.2)",
+                  background: "rgba(29,156,254,0.1)",
+                  border: "1px solid rgba(29,156,254,0.2)",
                   borderRadius: 12,
                   display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
                 }}>
-                  <s.icon style={{ width: 19, height: 19, color: "#10b981" }} />
+                  <s.icon style={{ width: 19, height: 19, color: "#1d9cfe" }} />
                 </div>
                 <div>
-                  <div style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, color: "#ffffff", marginBottom: 2 }}>{s.label}</div>
+                  <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 13, color: "#ffffff", marginBottom: 2 }}>{s.label}</div>
                   <div style={{ fontSize: 11, color: "#6b7280" }}>{s.desc}</div>
                 </div>
               </motion.div>
@@ -196,22 +196,22 @@ export default function LLCFormation() {
               <motion.div key={s.name} variants={fadeUp} custom={i} whileHover={{ y: -5 }}>
                 <div style={{
                   background: "#111111", borderRadius: 20,
-                  border: "1px solid rgba(16,185,129,0.2)",
+                  border: "1px solid rgba(29,156,254,0.2)",
                   padding: "36px 30px", height: "100%",
                   position: "relative", overflow: "hidden",
                   transition: "all 0.3s ease",
-                  boxShadow: "0 0 40px rgba(16,185,129,0.05)",
+                  boxShadow: "0 0 40px rgba(29,156,254,0.05)",
                 }}>
                   <div style={{
                     position: "absolute", top: 0, left: 0, right: 0, height: 3,
-                    background: "linear-gradient(90deg, #10b981, #34d399, transparent)",
+                    background: "linear-gradient(90deg, #1d9cfe, #94a3b8, transparent)",
                   }} />
 
                   <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 28 }}>
                     <span style={{ fontSize: 40 }}>{s.emoji}</span>
                     <div>
-                      <div style={{ fontFamily: "'Outfit', sans-serif", fontSize: 26, fontWeight: 800, color: "#ffffff" }}>{s.name}</div>
-                      <div style={{ fontSize: 11, color: "#10b981", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em" }}>US State</div>
+                      <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 26, fontWeight: 800, color: "#ffffff" }}>{s.name}</div>
+                      <div style={{ fontSize: 11, color: "#1d9cfe", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em" }}>US State</div>
                     </div>
                   </div>
 
@@ -220,12 +220,12 @@ export default function LLCFormation() {
                       <li key={h} style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
                         <div style={{
                           width: 20, height: 20, flexShrink: 0, marginTop: 1,
-                          background: "rgba(16,185,129,0.15)",
-                          border: "1px solid rgba(16,185,129,0.3)",
+                          background: "rgba(29,156,254,0.15)",
+                          border: "1px solid rgba(29,156,254,0.3)",
                           borderRadius: "50%",
                           display: "flex", alignItems: "center", justifyContent: "center",
                         }}>
-                          <CheckCircle2 style={{ width: 12, height: 12, color: "#10b981" }} />
+                          <CheckCircle2 style={{ width: 12, height: 12, color: "#1d9cfe" }} />
                         </div>
                         <span style={{ fontSize: 14, color: "#d1d5db", lineHeight: 1.55 }}>{h}</span>
                       </li>
@@ -259,16 +259,16 @@ export default function LLCFormation() {
               <motion.div key={pkg.name} variants={fadeUp} custom={i}>
                 <div style={{
                   background: pkg.popular
-                    ? "linear-gradient(160deg, #0d1e15 0%, #0a1710 100%)"
+                    ? "linear-gradient(160deg, #05131e 0%, #040e15 100%)"
                     : "#111111",
                   borderRadius: 20,
                   border: pkg.popular
-                    ? "2px solid rgba(16,185,129,0.4)"
+                    ? "2px solid rgba(29,156,254,0.4)"
                     : "1px solid rgba(255,255,255,0.07)",
                   padding: "36px 28px", display: "flex", flexDirection: "column",
                   position: "relative", overflow: "hidden", height: "100%",
                   boxShadow: pkg.popular
-                    ? "0 0 60px rgba(16,185,129,0.1), 0 30px 60px rgba(0,0,0,0.5)"
+                    ? "0 0 60px rgba(29,156,254,0.1), 0 30px 60px rgba(0,0,0,0.5)"
                     : "0 4px 20px rgba(0,0,0,0.3)",
                 }}>
                   <div style={{
@@ -280,9 +280,9 @@ export default function LLCFormation() {
                   {pkg.popular && (
                     <div style={{
                       position: "absolute", top: 16, right: 16,
-                      background: "rgba(16,185,129,0.15)",
-                      border: "1px solid rgba(16,185,129,0.3)",
-                      color: "#10b981", fontSize: 10, fontWeight: 700,
+                      background: "rgba(29,156,254,0.15)",
+                      border: "1px solid rgba(29,156,254,0.3)",
+                      color: "#1d9cfe", fontSize: 10, fontWeight: 700,
                       letterSpacing: "0.08em", textTransform: "uppercase",
                       padding: "4px 10px", borderRadius: 99,
                       display: "flex", alignItems: "center", gap: 4,
@@ -296,12 +296,12 @@ export default function LLCFormation() {
                     <span style={{ fontSize: 32 }}>{pkg.emoji}</span>
                   </div>
 
-                  <div style={{ fontFamily: "'Outfit', sans-serif", fontSize: 20, fontWeight: 800, color: "#ffffff", marginBottom: 8 }}>{pkg.name}</div>
+                  <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 800, color: "#ffffff", marginBottom: 8 }}>{pkg.name}</div>
                   <p style={{ fontSize: 13, color: "#6b7280", marginBottom: 24, lineHeight: 1.6 }}>{pkg.desc}</p>
 
                   <div style={{ display: "flex", alignItems: "flex-end", gap: 4, marginBottom: 28 }}>
                     <span style={{ fontSize: 18, color: "#6b7280", fontWeight: 600, alignSelf: "flex-start", marginTop: 8 }}>£</span>
-                    <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 60, fontWeight: 800, color: "#ffffff", letterSpacing: "-0.05em", lineHeight: 1 }}>{pkg.price}</span>
+                    <span style={{ fontFamily: "'Syne', sans-serif", fontSize: 60, fontWeight: 800, color: "#ffffff", letterSpacing: "-0.05em", lineHeight: 1 }}>{pkg.price}</span>
                     <span style={{ fontSize: 13, color: "#6b7280", marginBottom: 8 }}>/ one-time</span>
                   </div>
 
@@ -312,12 +312,12 @@ export default function LLCFormation() {
                       <li key={f} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                         <div style={{
                           width: 18, height: 18, flexShrink: 0, marginTop: 1,
-                          background: "rgba(16,185,129,0.15)",
-                          border: "1px solid rgba(16,185,129,0.3)",
+                          background: "rgba(29,156,254,0.15)",
+                          border: "1px solid rgba(29,156,254,0.3)",
                           borderRadius: "50%",
                           display: "flex", alignItems: "center", justifyContent: "center",
                         }}>
-                          <CheckCircle2 style={{ width: 11, height: 11, color: "#10b981" }} />
+                          <CheckCircle2 style={{ width: 11, height: 11, color: "#1d9cfe" }} />
                         </div>
                         <span style={{ fontSize: 13, color: "#d1d5db", lineHeight: 1.5 }}>{f}</span>
                       </li>
@@ -327,12 +327,12 @@ export default function LLCFormation() {
                   <Link href="/contact" style={{
                     display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
                     padding: "13px 0",
-                    background: pkg.popular ? "linear-gradient(135deg, #10b981, #059669)" : "rgba(255,255,255,0.06)",
+                    background: pkg.popular ? "linear-gradient(135deg, #1d9cfe, #94a3b8)" : "rgba(255,255,255,0.06)",
                     color: pkg.popular ? "#ffffff" : "#d1d5db",
                     fontFamily: "'Space Grotesk', sans-serif",
                     fontWeight: 700, fontSize: 14, borderRadius: 12,
                     border: pkg.popular ? "none" : "1px solid rgba(255,255,255,0.1)",
-                    boxShadow: pkg.popular ? "0 4px 14px rgba(16,185,129,0.3)" : "none",
+                    boxShadow: pkg.popular ? "0 4px 14px rgba(29,156,254,0.3)" : "none",
                     transition: "all 0.25s ease",
                   }}
                     onMouseEnter={(e) => { if (!pkg.popular) { e.currentTarget.style.background = "rgba(255,255,255,0.1)"; } }}
@@ -353,22 +353,22 @@ export default function LLCFormation() {
           <motion.div
             initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             style={{
-              background: "linear-gradient(160deg, #0d1e15 0%, #091a11 100%)",
+              background: "linear-gradient(160deg, #05131e 0%, #030d14 100%)",
               borderRadius: 24, padding: "60px 40px", textAlign: "center",
-              border: "1px solid rgba(16,185,129,0.2)",
-              boxShadow: "0 0 60px rgba(16,185,129,0.06), 0 20px 60px rgba(0,0,0,0.5)",
+              border: "1px solid rgba(29,156,254,0.2)",
+              boxShadow: "0 0 60px rgba(29,156,254,0.06), 0 20px 60px rgba(0,0,0,0.5)",
               position: "relative", overflow: "hidden",
             }}
           >
             <div style={{
               position: "absolute", top: -50, left: "50%", transform: "translateX(-50%)",
               width: 400, height: 200,
-              background: "radial-gradient(circle, rgba(16,185,129,0.15) 0%, transparent 70%)",
+              background: "radial-gradient(circle, rgba(29,156,254,0.15) 0%, transparent 70%)",
               filter: "blur(40px)", pointerEvents: "none",
             }} />
             <div style={{ position: "relative", zIndex: 1 }}>
               <h2 style={{
-                fontFamily: "'Outfit', sans-serif",
+                fontFamily: "'Syne', sans-serif",
                 fontSize: "clamp(26px, 4vw, 42px)", fontWeight: 800, color: "#ffffff",
                 letterSpacing: "-0.03em", marginBottom: 14,
               }}>Ready to enter the US market?</h2>
