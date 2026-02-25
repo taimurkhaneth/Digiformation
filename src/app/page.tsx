@@ -170,15 +170,16 @@ export default function Home() {
               marginBottom: 28,
               maxWidth: 760,
             }}>
-              Register your UK or US{" "}
-              <span style={{
-                background: "linear-gradient(135deg, #71717a 0%, #a1a1aa 50%, #d4d4d8 100%)",
+              Register your{" "}
+              <span className="animate-gradient-x" style={{
+                backgroundImage: "linear-gradient(to right, #38bdf8, #818cf8, #c084fc, #38bdf8)",
+                backgroundSize: "200% auto",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
                 display: "inline",
               }}>
-                company
+                UK or US company
               </span>
               <br />
               <span style={{ color: "#ffffff" }}>in days.</span>
