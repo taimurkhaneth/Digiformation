@@ -69,7 +69,7 @@ export function Footer() {
                 <Building2 style={{ color: "white", width: 18, height: 18 }} />
               </div>
               <span style={{
-                fontFamily: "'Syne', sans-serif",
+                fontFamily: "'Outfit', sans-serif",
                 fontWeight: 800, fontSize: 19,
                 color: "#ffffff", letterSpacing: "-0.04em",
               }}>
@@ -127,7 +127,7 @@ export function Footer() {
           {/* Services */}
           <div>
             <h4 style={{
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Outfit', sans-serif",
               color: "#ffffff", fontWeight: 800, fontSize: 13,
               letterSpacing: "0.06em", textTransform: "uppercase",
               marginBottom: 24, display: "flex", alignItems: "center", gap: 8,
@@ -163,7 +163,7 @@ export function Footer() {
           {/* Company */}
           <div>
             <h4 style={{
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Outfit', sans-serif",
               color: "#ffffff", fontWeight: 800, fontSize: 13,
               letterSpacing: "0.06em", textTransform: "uppercase",
               marginBottom: 24, display: "flex", alignItems: "center", gap: 8,
@@ -195,7 +195,7 @@ export function Footer() {
           {/* Contact */}
           <div>
             <h4 style={{
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Outfit', sans-serif",
               color: "#ffffff", fontWeight: 800, fontSize: 13,
               letterSpacing: "0.06em", textTransform: "uppercase",
               marginBottom: 24, display: "flex", alignItems: "center", gap: 8,

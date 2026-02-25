@@ -116,7 +116,7 @@ export default function LLCFormation() {
               US Company Formation
             </span>
             <h1 style={{
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Outfit', sans-serif",
               fontSize: "clamp(38px, 6vw, 70px)", fontWeight: 800,
               letterSpacing: "-0.045em", color: "#ffffff", lineHeight: 1.05, marginBottom: 22, maxWidth: 720,
             }}>
@@ -168,7 +168,7 @@ export default function LLCFormation() {
                   <s.icon style={{ width: 19, height: 19, color: "#71717a" }} />
                 </div>
                 <div>
-                  <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 13, color: "#ffffff", marginBottom: 2 }}>{s.label}</div>
+                  <div style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, color: "#ffffff", marginBottom: 2 }}>{s.label}</div>
                   <div style={{ fontSize: 11, color: "#6b7280" }}>{s.desc}</div>
                 </div>
               </motion.div>
@@ -210,7 +210,7 @@ export default function LLCFormation() {
                   <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 28 }}>
                     <span style={{ fontSize: 40 }}>{s.emoji}</span>
                     <div>
-                      <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 26, fontWeight: 800, color: "#ffffff" }}>{s.name}</div>
+                      <div style={{ fontFamily: "'Outfit', sans-serif", fontSize: 26, fontWeight: 800, color: "#ffffff" }}>{s.name}</div>
                       <div style={{ fontSize: 11, color: "#71717a", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em" }}>US State</div>
                     </div>
                   </div>
@@ -296,12 +296,12 @@ export default function LLCFormation() {
                     <span style={{ fontSize: 32 }}>{pkg.emoji}</span>
                   </div>
 
-                  <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 800, color: "#ffffff", marginBottom: 8 }}>{pkg.name}</div>
+                  <div style={{ fontFamily: "'Outfit', sans-serif", fontSize: 20, fontWeight: 800, color: "#ffffff", marginBottom: 8 }}>{pkg.name}</div>
                   <p style={{ fontSize: 13, color: "#6b7280", marginBottom: 24, lineHeight: 1.6 }}>{pkg.desc}</p>
 
                   <div style={{ display: "flex", alignItems: "flex-end", gap: 4, marginBottom: 28 }}>
                     <span style={{ fontSize: 18, color: "#6b7280", fontWeight: 600, alignSelf: "flex-start", marginTop: 8 }}>£</span>
-                    <span style={{ fontFamily: "'Syne', sans-serif", fontSize: 60, fontWeight: 800, color: "#ffffff", letterSpacing: "-0.05em", lineHeight: 1 }}>{pkg.price}</span>
+                    <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 60, fontWeight: 800, color: "#ffffff", letterSpacing: "-0.05em", lineHeight: 1 }}>{pkg.price}</span>
                     <span style={{ fontSize: 13, color: "#6b7280", marginBottom: 8 }}>/ one-time</span>
                   </div>
 
@@ -368,7 +368,7 @@ export default function LLCFormation() {
             }} />
             <div style={{ position: "relative", zIndex: 1 }}>
               <h2 style={{
-                fontFamily: "'Syne', sans-serif",
+                fontFamily: "'Outfit', sans-serif",
                 fontSize: "clamp(26px, 4vw, 42px)", fontWeight: 800, color: "#ffffff",
                 letterSpacing: "-0.03em", marginBottom: 14,
               }}>Ready to enter the US market?</h2>

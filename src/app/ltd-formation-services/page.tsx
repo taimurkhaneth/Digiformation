@@ -121,7 +121,7 @@ export default function LTDFormation() {
               UK Company Formation
             </span>
             <h1 style={{
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Outfit', sans-serif",
               fontSize: "clamp(38px, 6vw, 70px)",
               fontWeight: 800, letterSpacing: "-0.045em",
               color: "#ffffff", lineHeight: 1.05, marginBottom: 22, maxWidth: 720,
@@ -183,7 +183,7 @@ export default function LTDFormation() {
                   <f.icon style={{ width: 20, height: 20, color: "#71717a" }} />
                 </div>
                 <div>
-                  <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 14, color: "#ffffff", marginBottom: 3 }}>{f.label}</div>
+                  <div style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 14, color: "#ffffff", marginBottom: 3 }}>{f.label}</div>
                   <div style={{ fontSize: 12, color: "#6b7280" }}>{f.desc}</div>
                 </div>
               </motion.div>
@@ -225,7 +225,7 @@ export default function LTDFormation() {
                   background: `linear-gradient(90deg, #71717a, #a1a1aa, transparent)`,
                 }} />
                 <span style={{
-                  fontFamily: "'Syne', sans-serif",
+                  fontFamily: "'Outfit', sans-serif",
                   fontSize: 56, fontWeight: 800, lineHeight: 1,
                   color: "rgba(113,113,122,0.08)",
                   display: "block", marginBottom: 12,
@@ -240,7 +240,7 @@ export default function LTDFormation() {
                 }}>
                   <step.icon style={{ width: 22, height: 22, color: "#71717a" }} />
                 </div>
-                <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 17, fontWeight: 800, color: "#ffffff", marginBottom: 10 }}>{step.label}</div>
+                <div style={{ fontFamily: "'Outfit', sans-serif", fontSize: 17, fontWeight: 800, color: "#ffffff", marginBottom: 10 }}>{step.label}</div>
                 <p style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.65 }}>{step.desc}</p>
               </motion.div>
             ))}
@@ -316,7 +316,7 @@ export default function LTDFormation() {
                     <span style={{ fontSize: 32 }}>{pkg.emoji}</span>
                   </div>
                   <div style={{
-                    fontFamily: "'Syne', sans-serif",
+                    fontFamily: "'Outfit', sans-serif",
                     fontSize: 20, fontWeight: 800, color: "#ffffff", marginBottom: 8,
                   }}>{pkg.name}</div>
                   <p style={{ fontSize: 13, color: "#6b7280", marginBottom: 24, lineHeight: 1.6 }}>{pkg.desc}</p>
@@ -325,7 +325,7 @@ export default function LTDFormation() {
                   <div style={{ display: "flex", alignItems: "flex-end", gap: 4, marginBottom: 28 }}>
                     <span style={{ fontSize: 18, color: "#6b7280", fontWeight: 600, alignSelf: "flex-start", marginTop: 8 }}>£</span>
                     <span style={{
-                      fontFamily: "'Syne', sans-serif",
+                      fontFamily: "'Outfit', sans-serif",
                       fontSize: 60, fontWeight: 800, color: "#ffffff",
                       letterSpacing: "-0.05em", lineHeight: 1,
                     }}>{pkg.price}</span>
@@ -413,7 +413,7 @@ export default function LTDFormation() {
             }} />
             <div style={{ position: "relative", zIndex: 1 }}>
               <h2 style={{
-                fontFamily: "'Syne', sans-serif",
+                fontFamily: "'Outfit', sans-serif",
                 fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, color: "#ffffff",
                 letterSpacing: "-0.03em", marginBottom: 14,
               }}>Ready to form your company?</h2>

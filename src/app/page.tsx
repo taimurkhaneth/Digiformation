@@ -161,7 +161,7 @@ export default function Home() {
 
             {/* Headline */}
             <motion.h1 variants={fadeUp} style={{
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Outfit', sans-serif",
               fontSize: "clamp(40px, 6vw, 76px)",
               fontWeight: 800,
               letterSpacing: "-0.045em",
@@ -171,14 +171,7 @@ export default function Home() {
               maxWidth: 760,
             }}>
               Register your{" "}
-              <span className="animate-gradient-x" style={{
-                backgroundImage: "linear-gradient(to right, #38bdf8, #818cf8, #c084fc, #38bdf8)",
-                backgroundSize: "200% auto",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-                display: "inline",
-              }}>
+              <span className="text-morph">
                 UK or US company
               </span>
               <br />
@@ -244,7 +237,7 @@ export default function Home() {
                 }} />
                 <div style={{
                   fontSize: 42, fontWeight: 800, letterSpacing: "-0.05em", lineHeight: 1,
-                  fontFamily: "'Syne', sans-serif",
+                  fontFamily: "'Outfit', sans-serif",
                   background: "linear-gradient(135deg, #71717a, #a1a1aa)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
@@ -414,7 +407,7 @@ export default function Home() {
                     }}>{s.badge}</span>
 
                     <div style={{
-                      fontFamily: "'Syne', sans-serif",
+                      fontFamily: "'Outfit', sans-serif",
                       fontSize: 20, fontWeight: 800, color: "#ffffff",
                       letterSpacing: "-0.03em", marginBottom: 10,
                     }}>{s.label}</div>
@@ -516,7 +509,7 @@ export default function Home() {
                 </motion.div>
 
                 <div style={{
-                  fontFamily: "'Syne', sans-serif",
+                  fontFamily: "'Outfit', sans-serif",
                   fontSize: i === 0 ? 22 : 17,
                   fontWeight: 800, color: "#ffffff",
                   letterSpacing: "-0.03em", marginBottom: 10,
@@ -578,7 +571,7 @@ export default function Home() {
                 {/* Emerald quote mark */}
                 <div style={{
                   position: "absolute", top: 20, right: 24,
-                  fontFamily: "'Syne', sans-serif",
+                  fontFamily: "'Outfit', sans-serif",
                   fontSize: 80, fontWeight: 800, lineHeight: 1,
                   color: "rgba(113,113,122,0.08)",
                   pointerEvents: "none",
@@ -606,7 +599,7 @@ export default function Home() {
                     width: 44, height: 44, borderRadius: "50%",
                     background: "linear-gradient(135deg, #71717a, #a1a1aa)",
                     display: "flex", alignItems: "center", justifyContent: "center",
-                    fontFamily: "'Syne', sans-serif",
+                    fontFamily: "'Outfit', sans-serif",
                     fontSize: 16, fontWeight: 800, color: "white",
                     boxShadow: "0 0 16px rgba(113,113,122,0.3)",
                     flexShrink: 0,
@@ -614,7 +607,7 @@ export default function Home() {
                     {t.name[0]}
                   </div>
                   <div>
-                    <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 14, fontWeight: 700, color: "#ffffff" }}>
+                    <div style={{ fontFamily: "'Outfit', sans-serif", fontSize: 14, fontWeight: 700, color: "#ffffff" }}>
                       {t.name}
                     </div>
                     <div style={{ fontSize: 12, color: "#6b7280", marginTop: 2 }}>{t.role}</div>
@@ -667,7 +660,7 @@ export default function Home() {
                 Start Today
               </span>
               <h2 style={{
-                fontFamily: "'Syne', sans-serif",
+                fontFamily: "'Outfit', sans-serif",
                 fontSize: "clamp(30px, 5vw, 52px)",
                 fontWeight: 800, color: "#ffffff",
                 letterSpacing: "-0.04em", marginBottom: 20, lineHeight: 1.1,

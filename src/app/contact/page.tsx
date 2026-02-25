@@ -73,7 +73,7 @@ export default function Contact() {
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}>
             <span className="section-label" style={{ marginBottom: 24, display: "inline-block" }}>Get in Touch</span>
             <h1 style={{
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Outfit', sans-serif",
               fontSize: "clamp(36px, 5.5vw, 64px)", fontWeight: 800,
               letterSpacing: "-0.04em", color: "#ffffff", lineHeight: 1.05, marginBottom: 20,
             }}>
@@ -109,7 +109,7 @@ export default function Contact() {
                   border: "1px solid rgba(255,255,255,0.07)", padding: "32px 28px",
                 }}
               >
-                <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 800, color: "#ffffff", marginBottom: 28 }}>
+                <h2 style={{ fontFamily: "'Outfit', sans-serif", fontSize: 20, fontWeight: 800, color: "#ffffff", marginBottom: 28 }}>
                   Contact details
                 </h2>
                 <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
@@ -154,7 +154,7 @@ export default function Contact() {
                   }}>
                     <Clock style={{ width: 15, height: 15, color: "#71717a" }} />
                   </div>
-                  <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 15, fontWeight: 800, color: "#ffffff" }}>Office hours</h3>
+                  <h3 style={{ fontFamily: "'Outfit', sans-serif", fontSize: 15, fontWeight: 800, color: "#ffffff" }}>Office hours</h3>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   {[["Mon – Fri", "9:00 – 18:00 GMT"], ["Saturday", "Limited availability"], ["Sunday", "Closed"]].map(([d, h]) => (
@@ -187,7 +187,7 @@ export default function Contact() {
                   <MessageCircle style={{ width: 22, height: 22, color: "white" }} />
                 </div>
                 <div style={{ flex: 1 }}>
-                  <p style={{ fontSize: 14, fontWeight: 800, color: "white", marginBottom: 2, fontFamily: "'Syne', sans-serif" }}>Chat on WhatsApp</p>
+                  <p style={{ fontSize: 14, fontWeight: 800, color: "white", marginBottom: 2, fontFamily: "'Outfit', sans-serif" }}>Chat on WhatsApp</p>
                   <p style={{ fontSize: 12, color: "rgba(255,255,255,0.75)" }}>Fastest response — usually under 1 hour</p>
                 </div>
                 <ArrowRight style={{ width: 18, height: 18, color: "white" }} />
@@ -220,7 +220,7 @@ export default function Contact() {
                   }}>
                     <CheckCircle style={{ width: 32, height: 32, color: "#71717a" }} />
                   </div>
-                  <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: 26, fontWeight: 800, color: "#ffffff", marginBottom: 12 }}>Message sent!</h2>
+                  <h2 style={{ fontFamily: "'Outfit', sans-serif", fontSize: 26, fontWeight: 800, color: "#ffffff", marginBottom: 12 }}>Message sent!</h2>
                   <p style={{ color: "#6b7280", marginBottom: 32, fontSize: 15 }}>We&apos;ll be in touch within a few hours.</p>
                   <button onClick={() => setSubmitted(false)}
                     style={{ fontSize: 14, fontWeight: 700, color: "#71717a", background: "none", border: "none", cursor: "pointer" }}>
@@ -229,7 +229,7 @@ export default function Contact() {
                 </div>
               ) : (
                 <>
-                  <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: 22, fontWeight: 800, color: "#ffffff", marginBottom: 28 }}>
+                  <h2 style={{ fontFamily: "'Outfit', sans-serif", fontSize: 22, fontWeight: 800, color: "#ffffff", marginBottom: 28 }}>
                     Send us a message
                   </h2>
                   <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 20 }}>

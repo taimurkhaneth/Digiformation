@@ -84,7 +84,7 @@ export default function ShelfCompanies() {
               Ready-Made UK Companies
             </span>
             <h1 style={{
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Outfit', sans-serif",
               fontSize: "clamp(38px, 6vw, 70px)", fontWeight: 800,
               letterSpacing: "-0.045em", color: "#ffffff", lineHeight: 1.05, marginBottom: 22, maxWidth: 720,
             }}>
@@ -138,7 +138,7 @@ export default function ShelfCompanies() {
                   <item.icon style={{ width: 22, height: 22, color: "#71717a" }} />
                 </div>
                 <div>
-                  <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 15, color: "#ffffff", marginBottom: 7 }}>{item.label}</div>
+                  <div style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800, fontSize: 15, color: "#ffffff", marginBottom: 7 }}>{item.label}</div>
                   <p style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.65 }}>{item.desc}</p>
                 </div>
               </motion.div>
@@ -270,7 +270,7 @@ export default function ShelfCompanies() {
                       </div>
 
                       <h3 style={{
-                        fontFamily: "'Syne', sans-serif",
+                        fontFamily: "'Outfit', sans-serif",
                         fontWeight: 800, fontSize: 14, color: "#ffffff",
                         lineHeight: 1.4, marginBottom: 16,
                       }}>{c.name}</h3>
@@ -285,7 +285,7 @@ export default function ShelfCompanies() {
                       </div>
 
                       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingTop: 16, borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-                        <span style={{ fontFamily: "'Syne', sans-serif", fontSize: 26, fontWeight: 800, color: "#ffffff" }}>£{c.price}</span>
+                        <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 26, fontWeight: 800, color: "#ffffff" }}>£{c.price}</span>
                         <Link href="/contact"
                           style={{
                             display: "flex", alignItems: "center", gap: 5,
@@ -330,7 +330,7 @@ export default function ShelfCompanies() {
                   >
                     Previous
                   </button>
-                  <span style={{ fontSize: 14, color: "#9ca3af", fontWeight: 600, fontFamily: "'Syne', sans-serif" }}>
+                  <span style={{ fontSize: 14, color: "#9ca3af", fontWeight: 600, fontFamily: "'Outfit', sans-serif" }}>
                     Page <span style={{ color: "#ffffff" }}>{currentPage}</span> of {Math.ceil(filtered.length / ITEMS_PER_PAGE)}
                   </span>
                   <button
@@ -395,7 +395,7 @@ export default function ShelfCompanies() {
               filter: "blur(40px)", pointerEvents: "none",
             }} />
             <div style={{ position: "relative", zIndex: 1 }}>
-              <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 22, fontWeight: 800, color: "#ffffff", marginBottom: 8 }}>
+              <h3 style={{ fontFamily: "'Outfit', sans-serif", fontSize: 22, fontWeight: 800, color: "#ffffff", marginBottom: 8 }}>
                 Can&apos;t find what you need?
               </h3>
               <p style={{ fontSize: 15, color: "#6b7280" }}>

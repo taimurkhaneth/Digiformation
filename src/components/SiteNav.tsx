@@ -65,7 +65,7 @@ export function SiteNav() {
               <Building2 style={{ color: "white", width: 18, height: 18 }} />
             </motion.div>
             <span style={{
-              fontFamily: "'Syne', sans-serif", fontWeight: 800,
+              fontFamily: "'Outfit', sans-serif", fontWeight: 800,
               fontSize: 20, color: "#ffffff", letterSpacing: "-0.04em",
             }}>
               Digi<span style={{ color: "#71717a" }}>formation</span>
@@ -176,7 +176,7 @@ export function SiteNav() {
                   style={{
                     display: "flex", alignItems: "center", justifyContent: "space-between",
                     padding: "16px 0", fontSize: 17, fontWeight: 700,
-                    fontFamily: "'Syne', sans-serif", color: "#ffffff",
+                    fontFamily: "'Outfit', sans-serif", color: "#ffffff",
                     borderBottom: "1px solid rgba(255,255,255,0.05)",
                     letterSpacing: "-0.02em",
                   }}

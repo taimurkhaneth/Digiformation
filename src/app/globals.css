@@ -175,6 +175,15 @@
   }
 }
 
+@keyframes text-morph-anim {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
 /* ─── Utilities ──────────────────────────────────────────────────────────── */
 @layer utilities {
   /* ── Typography ── */
@@ -197,6 +206,15 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  .text-morph {
+    background: linear-gradient(to bottom, #38bdf8, #10b981, #c084fc, #38bdf8);
+    background-size: 100% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: text-morph-anim 6s infinite linear;
   }
 
   /* ── Section Labels ── */

@@ -12,8 +12,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
-        heading: ["var(--font-syne)", "sans-serif"],
-        syne: ["var(--font-syne)", "sans-serif"],
+        heading: ["var(--font-outfit)", "sans-serif"],
+        outfit: ["var(--font-outfit)", "sans-serif"],
       },
       colors: {
         background: "var(--background)",
@@ -38,6 +38,7 @@ export default {
       },
       animation: {
         'gradient-x': 'gradient-x 15s ease infinite',
+        'gradient-y': 'gradient-y 5s ease infinite',
         'fade-in': 'fade-in 0.5s ease-out forwards',
         'float': 'float 6s ease-in-out infinite',
       },
@@ -45,6 +46,10 @@ export default {
         'gradient-x': {
           '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
           '50%': { 'background-size': '200% 200%', 'background-position': 'right center' },
+        },
+        'gradient-y': {
+          '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'center top' },
+          '50%': { 'background-size': '200% 200%', 'background-position': 'center bottom' },
         },
         'fade-in': {
           '0%': { opacity: '0', transform: 'translateY(10px)' },

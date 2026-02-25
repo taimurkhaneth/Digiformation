@@ -120,7 +120,7 @@ export default function WebDev() {
               Web Development
             </span>
             <h1 style={{
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Outfit', sans-serif",
               fontSize: "clamp(38px, 6vw, 72px)", fontWeight: 800,
               letterSpacing: "-0.045em", color: "#ffffff", lineHeight: 1.05, marginBottom: 22, maxWidth: 760,
             }}>
@@ -159,7 +159,7 @@ export default function WebDev() {
                 background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)",
                 borderRadius: 14, padding: "18px 24px", flex: "1 1 140px",
               }}>
-                <div style={{ fontSize: 28, fontWeight: 800, color: "#71717a", fontFamily: "'Syne', sans-serif", letterSpacing: "-0.04em" }}>{s.num}</div>
+                <div style={{ fontSize: 28, fontWeight: 800, color: "#71717a", fontFamily: "'Outfit', sans-serif", letterSpacing: "-0.04em" }}>{s.num}</div>
                 <div style={{ fontSize: 12, color: "#6b7280", marginTop: 3, fontWeight: 500 }}>{s.label}</div>
               </div>
             ))}
@@ -199,7 +199,7 @@ export default function WebDev() {
                   }}>
                     <s.icon style={{ width: 20, height: 20, color: "#71717a" }} />
                   </div>
-                  <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 18, color: "#ffffff", marginBottom: 8 }}>{s.label}</div>
+                  <div style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800, fontSize: 18, color: "#ffffff", marginBottom: 8 }}>{s.label}</div>
                   <div style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.65, marginBottom: 20 }}>{s.desc}</div>
                   <ul style={{ listStyle: "none", padding: 0, margin: "0 0 20px", display: "flex", flexDirection: "column", gap: 8 }}>
                     {s.features.map((f) => (
@@ -211,7 +211,7 @@ export default function WebDev() {
                   </ul>
                   {s.from !== "Included" && (
                     <div style={{ fontSize: 12, color: "#4b5563", fontWeight: 600 }}>
-                      From <span style={{ color: "#71717a", fontSize: 15, fontFamily: "'Syne', sans-serif", fontWeight: 800 }}>£{s.from}</span>
+                      From <span style={{ color: "#71717a", fontSize: 15, fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>£{s.from}</span>
                     </div>
                   )}
                   {s.from === "Included" && (
@@ -258,7 +258,7 @@ export default function WebDev() {
                     <Layers style={{ width: 16, height: 16, color: "#71717a" }} />
                   </div>
                   <div>
-                    <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 15, color: "#fff" }}>{t.label}</div>
+                    <div style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, color: "#fff" }}>{t.label}</div>
                     <div style={{ fontSize: 12, color: "#6b7280", marginTop: 2 }}>{t.desc}</div>
                   </div>
                 </div>
@@ -288,7 +288,7 @@ export default function WebDev() {
                   borderRadius: 18, padding: "28px 24px", height: "100%", position: "relative", overflow: "hidden",
                 }}>
                   <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, #71717a, transparent)" }} />
-                  <div style={{ fontSize: 42, fontWeight: 800, color: "rgba(113,113,122,0.15)", fontFamily: "'Syne', sans-serif", letterSpacing: "-0.05em", marginBottom: 16 }}>{step.num}</div>
+                  <div style={{ fontSize: 42, fontWeight: 800, color: "rgba(113,113,122,0.15)", fontFamily: "'Outfit', sans-serif", letterSpacing: "-0.05em", marginBottom: 16 }}>{step.num}</div>
                   <div style={{
                     width: 40, height: 40, borderRadius: 10, marginBottom: 16,
                     background: "rgba(113,113,122,0.1)", border: "1px solid rgba(113,113,122,0.2)",
@@ -296,7 +296,7 @@ export default function WebDev() {
                   }}>
                     <step.icon style={{ width: 18, height: 18, color: "#71717a" }} />
                   </div>
-                  <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 17, color: "#fff", marginBottom: 10 }}>{step.label}</div>
+                  <div style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800, fontSize: 17, color: "#fff", marginBottom: 10 }}>{step.label}</div>
                   <div style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.65 }}>{step.desc}</div>
                 </div>
               </motion.div>
@@ -342,10 +342,10 @@ export default function WebDev() {
                       <Star style={{ width: 10, height: 10 }} /> Most Popular
                     </div>
                   )}
-                  <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 22, color: "#fff", marginBottom: 6 }}>{pkg.name}</div>
+                  <div style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800, fontSize: 22, color: "#fff", marginBottom: 6 }}>{pkg.name}</div>
                   <div style={{ fontSize: 13, color: "#6b7280", marginBottom: 24, lineHeight: 1.6 }}>{pkg.desc}</div>
                   <div style={{ marginBottom: 28 }}>
-                    <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 46, color: "#fff", letterSpacing: "-0.05em" }}>£{pkg.price}</span>
+                    <span style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800, fontSize: 46, color: "#fff", letterSpacing: "-0.05em" }}>£{pkg.price}</span>
                     <span style={{ fontSize: 14, color: "#4b5563", marginLeft: 6 }}>one-time</span>
                   </div>
                   <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", display: "flex", flexDirection: "column", gap: 10 }}>
@@ -392,7 +392,7 @@ export default function WebDev() {
                 <Clock style={{ width: 18, height: 18, color: "#71717a" }} />
                 <span style={{ fontSize: 14, color: "#71717a", fontWeight: 600 }}>We respond within 2 hours</span>
               </div>
-              <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 4vw, 48px)", letterSpacing: "-0.04em", color: "#fff", marginBottom: 16 }}>
+              <h2 style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 4vw, 48px)", letterSpacing: "-0.04em", color: "#fff", marginBottom: 16 }}>
                 Ready to build something great?
               </h2>
               <p style={{ fontSize: 17, color: "#6b7280", maxWidth: 480, margin: "0 auto 36px", lineHeight: 1.7 }}>

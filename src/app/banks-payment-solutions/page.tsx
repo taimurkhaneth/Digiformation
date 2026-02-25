@@ -71,7 +71,7 @@ export default function Banking() {
               Financial Infrastructure
             </span>
             <h1 style={{
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Outfit', sans-serif",
               fontSize: "clamp(38px, 6vw, 70px)", fontWeight: 800,
               letterSpacing: "-0.045em", color: "#ffffff", lineHeight: 1.05, marginBottom: 22, maxWidth: 760,
             }}>
@@ -145,7 +145,7 @@ export default function Banking() {
                     }}>{b.badge}</span>
                   </div>
 
-                  <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 19, color: "#ffffff", marginBottom: 5 }}>{b.name}</div>
+                  <div style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800, fontSize: 19, color: "#ffffff", marginBottom: 5 }}>{b.name}</div>
                   <div style={{ fontSize: 12, fontWeight: 600, color: "#71717a", marginBottom: 20 }}>{b.type}</div>
 
                   <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
@@ -266,7 +266,7 @@ export default function Banking() {
             }} />
             <div style={{ position: "relative", zIndex: 1 }}>
               <h2 style={{
-                fontFamily: "'Syne', sans-serif",
+                fontFamily: "'Outfit', sans-serif",
                 fontSize: "clamp(26px, 4vw, 42px)", fontWeight: 800, color: "#ffffff",
                 letterSpacing: "-0.03em", marginBottom: 14,
               }}>Ready to open your account?</h2>
