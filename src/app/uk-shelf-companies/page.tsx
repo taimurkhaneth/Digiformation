@@ -72,7 +72,7 @@ export default function ShelfCompanies() {
         }} />
         <div style={{
           position: "absolute", top: -80, right: -80, width: 600, height: 500,
-          background: "radial-gradient(circle, rgba(29,156,254,0.1) 0%, transparent 65%)",
+          background: "radial-gradient(circle, rgba(113,113,122,0.1) 0%, transparent 65%)",
           filter: "blur(60px)", borderRadius: "50%", pointerEvents: "none",
         }} />
 
@@ -90,7 +90,7 @@ export default function ShelfCompanies() {
             }}>
               Acquire a UK Shelf{" "}
               <span style={{
-                background: "linear-gradient(135deg, #1d9cfe, #94a3b8)",
+                background: "linear-gradient(135deg, #71717a, #a1a1aa)",
                 WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
               }}>Company</span>
             </h1>
@@ -130,12 +130,12 @@ export default function ShelfCompanies() {
               >
                 <div style={{
                   width: 48, height: 48,
-                  background: "rgba(29,156,254,0.1)",
-                  border: "1px solid rgba(29,156,254,0.2)",
+                  background: "rgba(113,113,122,0.1)",
+                  border: "1px solid rgba(113,113,122,0.2)",
                   borderRadius: 14,
                   display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
                 }}>
-                  <item.icon style={{ width: 22, height: 22, color: "#1d9cfe" }} />
+                  <item.icon style={{ width: 22, height: 22, color: "#71717a" }} />
                 </div>
                 <div>
                   <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 15, color: "#ffffff", marginBottom: 7 }}>{item.label}</div>
@@ -175,7 +175,7 @@ export default function ShelfCompanies() {
                 outline: "none",
                 boxSizing: "border-box",
               }}
-              onFocus={(e) => (e.target.style.borderColor = "rgba(29,156,254,0.4)")}
+              onFocus={(e) => (e.target.style.borderColor = "rgba(113,113,122,0.4)")}
               onBlur={(e) => (e.target.style.borderColor = "rgba(255,255,255,0.1)")}
             />
           </div>
@@ -195,9 +195,9 @@ export default function ShelfCompanies() {
                   borderRadius: 8, border: "1px solid",
                   cursor: "pointer", fontFamily: "'Space Grotesk', sans-serif",
                   transition: "all 0.2s ease",
-                  background: vatFilter === v ? "rgba(29,156,254,0.15)" : "transparent",
-                  borderColor: vatFilter === v ? "rgba(29,156,254,0.4)" : "rgba(255,255,255,0.1)",
-                  color: vatFilter === v ? "#1d9cfe" : "#9ca3af",
+                  background: vatFilter === v ? "rgba(113,113,122,0.15)" : "transparent",
+                  borderColor: vatFilter === v ? "rgba(113,113,122,0.4)" : "rgba(255,255,255,0.1)",
+                  color: vatFilter === v ? "#71717a" : "#9ca3af",
                 }}
               >
                 {v === "all" ? "All" : v === "vat" ? "VAT Registered" : "Standard"}
@@ -245,25 +245,25 @@ export default function ShelfCompanies() {
                     >
                       <div style={{
                         position: "absolute", top: 0, left: 0, right: 0, height: 2,
-                        background: "linear-gradient(90deg, #1d9cfe, transparent)",
+                        background: "linear-gradient(90deg, #71717a, transparent)",
                       }} />
 
                       <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", marginBottom: 18 }}>
                         <div style={{
                           width: 44, height: 44,
-                          background: "rgba(29,156,254,0.1)",
-                          border: "1px solid rgba(29,156,254,0.2)",
+                          background: "rgba(113,113,122,0.1)",
+                          border: "1px solid rgba(113,113,122,0.2)",
                           borderRadius: 12,
                           display: "flex", alignItems: "center", justifyContent: "center",
                         }}>
-                          <Building2 style={{ width: 20, height: 20, color: "#1d9cfe" }} />
+                          <Building2 style={{ width: 20, height: 20, color: "#71717a" }} />
                         </div>
                         {c.vat_registered && (
                           <span style={{
                             fontSize: 10, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase",
-                            color: "#1d9cfe",
-                            background: "rgba(29,156,254,0.1)",
-                            border: "1px solid rgba(29,156,254,0.25)",
+                            color: "#71717a",
+                            background: "rgba(113,113,122,0.1)",
+                            border: "1px solid rgba(113,113,122,0.25)",
                             padding: "3px 8px", borderRadius: 99,
                           }}>VAT</span>
                         )}
@@ -289,19 +289,19 @@ export default function ShelfCompanies() {
                         <Link href="/contact"
                           style={{
                             display: "flex", alignItems: "center", gap: 5,
-                            fontSize: 12, fontWeight: 700, color: "#1d9cfe",
-                            background: "rgba(29,156,254,0.1)",
-                            border: "1px solid rgba(29,156,254,0.2)",
+                            fontSize: 12, fontWeight: 700, color: "#71717a",
+                            background: "rgba(113,113,122,0.1)",
+                            border: "1px solid rgba(113,113,122,0.2)",
                             padding: "7px 14px", borderRadius: 8,
                             transition: "all 0.2s ease",
                           }}
                           onMouseEnter={(e) => {
-                            e.currentTarget.style.background = "rgba(29,156,254,0.2)";
-                            e.currentTarget.style.borderColor = "rgba(29,156,254,0.4)";
+                            e.currentTarget.style.background = "rgba(113,113,122,0.2)";
+                            e.currentTarget.style.borderColor = "rgba(113,113,122,0.4)";
                           }}
                           onMouseLeave={(e) => {
-                            e.currentTarget.style.background = "rgba(29,156,254,0.1)";
-                            e.currentTarget.style.borderColor = "rgba(29,156,254,0.2)";
+                            e.currentTarget.style.background = "rgba(113,113,122,0.1)";
+                            e.currentTarget.style.borderColor = "rgba(113,113,122,0.2)";
                           }}
                         >
                           Acquire <ArrowRight style={{ width: 13, height: 13 }} />
@@ -355,8 +355,8 @@ export default function ShelfCompanies() {
             <div style={{ textAlign: "center", padding: "80px 0" }}>
               <div style={{
                 width: 64, height: 64,
-                background: "rgba(29,156,254,0.08)",
-                border: "1px solid rgba(29,156,254,0.15)",
+                background: "rgba(113,113,122,0.08)",
+                border: "1px solid rgba(113,113,122,0.15)",
                 borderRadius: "50%",
                 display: "flex", alignItems: "center", justifyContent: "center",
                 margin: "0 auto 20px",
@@ -366,7 +366,7 @@ export default function ShelfCompanies() {
               <p style={{ color: "#6b7280", fontWeight: 600, marginBottom: 16 }}>No companies match your search.</p>
               <button
                 onClick={() => { setSearch(""); setVatFilter("all"); setCurrentPage(1); }}
-                style={{ fontSize: 13, color: "#1d9cfe", fontWeight: 700, background: "none", border: "none", cursor: "pointer" }}
+                style={{ fontSize: 13, color: "#71717a", fontWeight: 700, background: "none", border: "none", cursor: "pointer" }}
               >
                 Reset filters
               </button>
@@ -383,15 +383,15 @@ export default function ShelfCompanies() {
             style={{
               background: "linear-gradient(160deg, #05131e 0%, #030d14 100%)",
               borderRadius: 24, padding: "48px 40px",
-              border: "1px solid rgba(29,156,254,0.2)",
-              boxShadow: "0 0 60px rgba(29,156,254,0.06), 0 20px 60px rgba(0,0,0,0.5)",
+              border: "1px solid rgba(113,113,122,0.2)",
+              boxShadow: "0 0 60px rgba(113,113,122,0.06), 0 20px 60px rgba(0,0,0,0.5)",
               display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between",
               gap: 24, position: "relative", overflow: "hidden",
             }}
           >
             <div style={{
               position: "absolute", top: -40, right: -40, width: 300, height: 200,
-              background: "radial-gradient(circle, rgba(29,156,254,0.12) 0%, transparent 70%)",
+              background: "radial-gradient(circle, rgba(113,113,122,0.12) 0%, transparent 70%)",
               filter: "blur(40px)", pointerEvents: "none",
             }} />
             <div style={{ position: "relative", zIndex: 1 }}>

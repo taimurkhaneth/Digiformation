@@ -59,7 +59,7 @@ export default function Banking() {
         }} />
         <div style={{
           position: "absolute", top: -80, right: -80, width: 600, height: 500,
-          background: "radial-gradient(circle, rgba(29,156,254,0.1) 0%, transparent 65%)",
+          background: "radial-gradient(circle, rgba(113,113,122,0.1) 0%, transparent 65%)",
           filter: "blur(60px)", borderRadius: "50%", pointerEvents: "none",
         }} />
 
@@ -77,7 +77,7 @@ export default function Banking() {
             }}>
               Open your business account &{" "}
               <span style={{
-                background: "linear-gradient(135deg, #1d9cfe, #94a3b8)",
+                background: "linear-gradient(135deg, #71717a, #a1a1aa)",
                 WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
               }}>accept payments</span>
             </h1>
@@ -122,7 +122,7 @@ export default function Banking() {
                 }}>
                   <div style={{
                     position: "absolute", top: 0, left: 0, right: 0, height: 2,
-                    background: "linear-gradient(90deg, #1d9cfe, #94a3b8, transparent)",
+                    background: "linear-gradient(90deg, #71717a, #a1a1aa, transparent)",
                   }} />
 
                   {/* Logo + badge row */}
@@ -138,27 +138,27 @@ export default function Banking() {
                     />
                     <span style={{
                       fontSize: 10, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase",
-                      color: "#1d9cfe",
-                      background: "rgba(29,156,254,0.1)",
-                      border: "1px solid rgba(29,156,254,0.2)",
+                      color: "#71717a",
+                      background: "rgba(113,113,122,0.1)",
+                      border: "1px solid rgba(113,113,122,0.2)",
                       padding: "3px 9px", borderRadius: 99,
                     }}>{b.badge}</span>
                   </div>
 
                   <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 19, color: "#ffffff", marginBottom: 5 }}>{b.name}</div>
-                  <div style={{ fontSize: 12, fontWeight: 600, color: "#1d9cfe", marginBottom: 20 }}>{b.type}</div>
+                  <div style={{ fontSize: 12, fontWeight: 600, color: "#71717a", marginBottom: 20 }}>{b.type}</div>
 
                   <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
                     {b.features.map((f) => (
                       <li key={f} style={{ display: "flex", alignItems: "center", gap: 10 }}>
                         <div style={{
                           width: 18, height: 18, flexShrink: 0,
-                          background: "rgba(29,156,254,0.15)",
-                          border: "1px solid rgba(29,156,254,0.3)",
+                          background: "rgba(113,113,122,0.15)",
+                          border: "1px solid rgba(113,113,122,0.3)",
                           borderRadius: "50%",
                           display: "flex", alignItems: "center", justifyContent: "center",
                         }}>
-                          <CheckCircle2 style={{ width: 11, height: 11, color: "#1d9cfe" }} />
+                          <CheckCircle2 style={{ width: 11, height: 11, color: "#71717a" }} />
                         </div>
                         <span style={{ fontSize: 13, color: "#9ca3af" }}>{f}</span>
                       </li>
@@ -169,7 +169,7 @@ export default function Banking() {
                     <Link href="/contact"
                       style={{
                         display: "flex", alignItems: "center", gap: 5,
-                        fontSize: 13, fontWeight: 700, color: "#1d9cfe",
+                        fontSize: 13, fontWeight: 700, color: "#71717a",
                         transition: "gap 0.2s",
                       }}
                       onMouseEnter={(e) => (e.currentTarget.style.gap = "10px")}
@@ -212,7 +212,7 @@ export default function Banking() {
                 }}>
                   <div style={{
                     position: "absolute", top: 0, left: 0, right: 0, height: 2,
-                    background: "linear-gradient(90deg, rgba(29,156,254,0.5), transparent)",
+                    background: "linear-gradient(90deg, rgba(113,113,122,0.5), transparent)",
                   }} />
 
                   <div style={{ marginBottom: 18 }}>
@@ -231,12 +231,12 @@ export default function Banking() {
 
                   <div style={{
                     display: "flex", alignItems: "center", gap: 8,
-                    background: "rgba(29,156,254,0.08)",
-                    border: "1px solid rgba(29,156,254,0.15)",
+                    background: "rgba(113,113,122,0.08)",
+                    border: "1px solid rgba(113,113,122,0.15)",
                     borderRadius: 8, padding: "7px 12px",
                   }}>
-                    <Clock style={{ width: 13, height: 13, color: "#1d9cfe", flexShrink: 0 }} />
-                    <span style={{ fontSize: 12, fontWeight: 700, color: "#1d9cfe" }}>Setup: {g.setup}</span>
+                    <Clock style={{ width: 13, height: 13, color: "#71717a", flexShrink: 0 }} />
+                    <span style={{ fontSize: 12, fontWeight: 700, color: "#71717a" }}>Setup: {g.setup}</span>
                   </div>
                 </div>
               </motion.div>
@@ -253,15 +253,15 @@ export default function Banking() {
             style={{
               background: "linear-gradient(160deg, #05131e 0%, #030d14 100%)",
               borderRadius: 24, padding: "60px 40px", textAlign: "center",
-              border: "1px solid rgba(29,156,254,0.2)",
-              boxShadow: "0 0 60px rgba(29,156,254,0.06), 0 20px 60px rgba(0,0,0,0.5)",
+              border: "1px solid rgba(113,113,122,0.2)",
+              boxShadow: "0 0 60px rgba(113,113,122,0.06), 0 20px 60px rgba(0,0,0,0.5)",
               position: "relative", overflow: "hidden",
             }}
           >
             <div style={{
               position: "absolute", top: -50, left: "50%", transform: "translateX(-50%)",
               width: 400, height: 200,
-              background: "radial-gradient(circle, rgba(29,156,254,0.15) 0%, transparent 70%)",
+              background: "radial-gradient(circle, rgba(113,113,122,0.15) 0%, transparent 70%)",
               filter: "blur(40px)", pointerEvents: "none",
             }} />
             <div style={{ position: "relative", zIndex: 1 }}>

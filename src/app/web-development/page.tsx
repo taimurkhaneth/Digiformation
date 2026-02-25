@@ -74,7 +74,7 @@ const PROCESS = [
 
 const PACKAGES = [
   {
-    name: "Starter", price: "499", color: "#1d9cfe",
+    name: "Starter", price: "499", color: "#71717a",
     desc: "Perfect for new businesses needing a clean, professional online presence.",
     features: ["Up to 5 pages", "Mobile responsive", "Contact form", "Basic on-page SEO", "3 revision rounds", "2-week delivery"],
   },
@@ -105,7 +105,7 @@ export default function WebDev() {
         {/* Glow */}
         <div style={{
           position: "absolute", top: -100, right: -80, width: 700, height: 500,
-          background: "radial-gradient(circle, rgba(29,156,254,0.1) 0%, transparent 65%)",
+          background: "radial-gradient(circle, rgba(113,113,122,0.1) 0%, transparent 65%)",
           filter: "blur(80px)", borderRadius: "50%", pointerEvents: "none",
         }} />
         <div style={{
@@ -126,7 +126,7 @@ export default function WebDev() {
             }}>
               Websites that work{" "}
               <span style={{
-                background: "linear-gradient(135deg, #1d9cfe, #94a3b8)",
+                background: "linear-gradient(135deg, #71717a, #a1a1aa)",
                 WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
               }}>as hard as you do.</span>
             </h1>
@@ -159,7 +159,7 @@ export default function WebDev() {
                 background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)",
                 borderRadius: 14, padding: "18px 24px", flex: "1 1 140px",
               }}>
-                <div style={{ fontSize: 28, fontWeight: 800, color: "#1d9cfe", fontFamily: "'Syne', sans-serif", letterSpacing: "-0.04em" }}>{s.num}</div>
+                <div style={{ fontSize: 28, fontWeight: 800, color: "#71717a", fontFamily: "'Syne', sans-serif", letterSpacing: "-0.04em" }}>{s.num}</div>
                 <div style={{ fontSize: 12, color: "#6b7280", marginTop: 3, fontWeight: 500 }}>{s.label}</div>
               </div>
             ))}
@@ -191,33 +191,33 @@ export default function WebDev() {
                   position: "relative", overflow: "hidden",
                   transition: "border-color 0.3s",
                 }}>
-                  <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, #1d9cfe, #94a3b8, transparent)" }} />
+                  <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, #71717a, #a1a1aa, transparent)" }} />
                   <div style={{
                     width: 46, height: 46, borderRadius: 12, marginBottom: 20,
-                    background: "rgba(29,156,254,0.1)", border: "1px solid rgba(29,156,254,0.2)",
+                    background: "rgba(113,113,122,0.1)", border: "1px solid rgba(113,113,122,0.2)",
                     display: "flex", alignItems: "center", justifyContent: "center",
                   }}>
-                    <s.icon style={{ width: 20, height: 20, color: "#1d9cfe" }} />
+                    <s.icon style={{ width: 20, height: 20, color: "#71717a" }} />
                   </div>
                   <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 18, color: "#ffffff", marginBottom: 8 }}>{s.label}</div>
                   <div style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.65, marginBottom: 20 }}>{s.desc}</div>
                   <ul style={{ listStyle: "none", padding: 0, margin: "0 0 20px", display: "flex", flexDirection: "column", gap: 8 }}>
                     {s.features.map((f) => (
                       <li key={f} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, color: "#9ca3af" }}>
-                        <CheckCircle2 style={{ width: 14, height: 14, color: "#1d9cfe", flexShrink: 0 }} />
+                        <CheckCircle2 style={{ width: 14, height: 14, color: "#71717a", flexShrink: 0 }} />
                         {f}
                       </li>
                     ))}
                   </ul>
                   {s.from !== "Included" && (
                     <div style={{ fontSize: 12, color: "#4b5563", fontWeight: 600 }}>
-                      From <span style={{ color: "#1d9cfe", fontSize: 15, fontFamily: "'Syne', sans-serif", fontWeight: 800 }}>£{s.from}</span>
+                      From <span style={{ color: "#71717a", fontSize: 15, fontFamily: "'Syne', sans-serif", fontWeight: 800 }}>£{s.from}</span>
                     </div>
                   )}
                   {s.from === "Included" && (
                     <div style={{
-                      fontSize: 11, fontWeight: 700, color: "#1d9cfe",
-                      background: "rgba(29,156,254,0.1)", border: "1px solid rgba(29,156,254,0.2)",
+                      fontSize: 11, fontWeight: 700, color: "#71717a",
+                      background: "rgba(113,113,122,0.1)", border: "1px solid rgba(113,113,122,0.2)",
                       borderRadius: 6, padding: "3px 10px", display: "inline-block", letterSpacing: "0.05em",
                     }}>INCLUDED IN ALL PACKAGES</div>
                   )}
@@ -252,10 +252,10 @@ export default function WebDev() {
                 }}>
                   <div style={{
                     width: 36, height: 36, flexShrink: 0, borderRadius: 9,
-                    background: "rgba(29,156,254,0.1)", border: "1px solid rgba(29,156,254,0.15)",
+                    background: "rgba(113,113,122,0.1)", border: "1px solid rgba(113,113,122,0.15)",
                     display: "flex", alignItems: "center", justifyContent: "center",
                   }}>
-                    <Layers style={{ width: 16, height: 16, color: "#1d9cfe" }} />
+                    <Layers style={{ width: 16, height: 16, color: "#71717a" }} />
                   </div>
                   <div>
                     <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 15, color: "#fff" }}>{t.label}</div>
@@ -287,14 +287,14 @@ export default function WebDev() {
                   background: "#111", border: "1px solid rgba(255,255,255,0.07)",
                   borderRadius: 18, padding: "28px 24px", height: "100%", position: "relative", overflow: "hidden",
                 }}>
-                  <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, #1d9cfe, transparent)" }} />
-                  <div style={{ fontSize: 42, fontWeight: 800, color: "rgba(29,156,254,0.15)", fontFamily: "'Syne', sans-serif", letterSpacing: "-0.05em", marginBottom: 16 }}>{step.num}</div>
+                  <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, #71717a, transparent)" }} />
+                  <div style={{ fontSize: 42, fontWeight: 800, color: "rgba(113,113,122,0.15)", fontFamily: "'Syne', sans-serif", letterSpacing: "-0.05em", marginBottom: 16 }}>{step.num}</div>
                   <div style={{
                     width: 40, height: 40, borderRadius: 10, marginBottom: 16,
-                    background: "rgba(29,156,254,0.1)", border: "1px solid rgba(29,156,254,0.2)",
+                    background: "rgba(113,113,122,0.1)", border: "1px solid rgba(113,113,122,0.2)",
                     display: "flex", alignItems: "center", justifyContent: "center",
                   }}>
-                    <step.icon style={{ width: 18, height: 18, color: "#1d9cfe" }} />
+                    <step.icon style={{ width: 18, height: 18, color: "#71717a" }} />
                   </div>
                   <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 17, color: "#fff", marginBottom: 10 }}>{step.label}</div>
                   <div style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.65 }}>{step.desc}</div>
@@ -325,17 +325,17 @@ export default function WebDev() {
               >
                 <div style={{
                   background: pkg.popular ? "linear-gradient(160deg, #05131e 0%, #030d14 100%)" : "#111",
-                  border: `1px solid ${pkg.popular ? "rgba(29,156,254,0.35)" : "rgba(255,255,255,0.07)"}`,
+                  border: `1px solid ${pkg.popular ? "rgba(113,113,122,0.35)" : "rgba(255,255,255,0.07)"}`,
                   borderRadius: 22, padding: "36px 30px", height: "100%",
                   position: "relative", overflow: "hidden",
-                  boxShadow: pkg.popular ? "0 0 50px rgba(29,156,254,0.1)" : "none",
+                  boxShadow: pkg.popular ? "0 0 50px rgba(113,113,122,0.1)" : "none",
                 }}>
                   <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg, ${pkg.color}, transparent)` }} />
                   {pkg.popular && (
                     <div style={{
                       position: "absolute", top: 18, right: 18,
-                      fontSize: 10, fontWeight: 700, letterSpacing: "0.08em", color: "#1d9cfe",
-                      background: "rgba(29,156,254,0.15)", border: "1px solid rgba(29,156,254,0.3)",
+                      fontSize: 10, fontWeight: 700, letterSpacing: "0.08em", color: "#71717a",
+                      background: "rgba(113,113,122,0.15)", border: "1px solid rgba(113,113,122,0.3)",
                       borderRadius: 6, padding: "3px 10px", textTransform: "uppercase",
                       display: "flex", alignItems: "center", gap: 4,
                     }}>
@@ -351,7 +351,7 @@ export default function WebDev() {
                   <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", display: "flex", flexDirection: "column", gap: 10 }}>
                     {pkg.features.map((f) => (
                       <li key={f} style={{ display: "flex", alignItems: "flex-start", gap: 10, fontSize: 14, color: "#9ca3af" }}>
-                        <CheckCircle2 style={{ width: 16, height: 16, color: "#1d9cfe", flexShrink: 0, marginTop: 1 }} />
+                        <CheckCircle2 style={{ width: 16, height: 16, color: "#71717a", flexShrink: 0, marginTop: 1 }} />
                         {f}
                       </li>
                     ))}
@@ -376,21 +376,21 @@ export default function WebDev() {
             style={{
               background: "linear-gradient(160deg, #05131e 0%, #030d14 100%)",
               borderRadius: 24, padding: "64px 40px", textAlign: "center",
-              border: "1px solid rgba(29,156,254,0.2)",
-              boxShadow: "0 0 60px rgba(29,156,254,0.06), 0 20px 60px rgba(0,0,0,0.5)",
+              border: "1px solid rgba(113,113,122,0.2)",
+              boxShadow: "0 0 60px rgba(113,113,122,0.06), 0 20px 60px rgba(0,0,0,0.5)",
               position: "relative", overflow: "hidden",
             }}
           >
-            <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, transparent, #1d9cfe, transparent)" }} />
+            <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, transparent, #71717a, transparent)" }} />
             <div style={{
               position: "absolute", top: -60, right: -60, width: 300, height: 300,
-              background: "radial-gradient(circle, rgba(29,156,254,0.08) 0%, transparent 70%)",
+              background: "radial-gradient(circle, rgba(113,113,122,0.08) 0%, transparent 70%)",
               filter: "blur(40px)",
             }} />
             <div style={{ position: "relative", zIndex: 1 }}>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8, marginBottom: 18 }}>
-                <Clock style={{ width: 18, height: 18, color: "#1d9cfe" }} />
-                <span style={{ fontSize: 14, color: "#1d9cfe", fontWeight: 600 }}>We respond within 2 hours</span>
+                <Clock style={{ width: 18, height: 18, color: "#71717a" }} />
+                <span style={{ fontSize: 14, color: "#71717a", fontWeight: 600 }}>We respond within 2 hours</span>
               </div>
               <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 4vw, 48px)", letterSpacing: "-0.04em", color: "#fff", marginBottom: 16 }}>
                 Ready to build something great?

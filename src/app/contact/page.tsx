@@ -66,7 +66,7 @@ export default function Contact() {
         <div style={{
           position: "absolute", top: -100, left: "50%", transform: "translateX(-50%)",
           width: 600, height: 400,
-          background: "radial-gradient(circle, rgba(29,156,254,0.1) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(113,113,122,0.1) 0%, transparent 70%)",
           filter: "blur(60px)", pointerEvents: "none",
         }} />
         <div style={{ maxWidth: 700, margin: "0 auto", padding: "0 24px", position: "relative", zIndex: 1 }}>
@@ -79,7 +79,7 @@ export default function Contact() {
             }}>
               Let&apos;s talk about{" "}
               <span style={{
-                background: "linear-gradient(135deg, #1d9cfe, #94a3b8)",
+                background: "linear-gradient(135deg, #71717a, #a1a1aa)",
                 WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
               }}>your business</span>
             </h1>
@@ -121,12 +121,12 @@ export default function Contact() {
                     <div key={item.label} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
                       <div style={{
                         width: 38, height: 38,
-                        background: "rgba(29,156,254,0.1)",
-                        border: "1px solid rgba(29,156,254,0.2)",
+                        background: "rgba(113,113,122,0.1)",
+                        border: "1px solid rgba(113,113,122,0.2)",
                         borderRadius: 10,
                         display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
                       }}>
-                        <item.icon style={{ width: 17, height: 17, color: "#1d9cfe" }} />
+                        <item.icon style={{ width: 17, height: 17, color: "#71717a" }} />
                       </div>
                       <div>
                         <p style={{ fontSize: 10, fontWeight: 700, color: "#6b7280", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 3 }}>{item.label}</p>
@@ -147,12 +147,12 @@ export default function Contact() {
                 <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 20 }}>
                   <div style={{
                     width: 34, height: 34,
-                    background: "rgba(29,156,254,0.1)",
-                    border: "1px solid rgba(29,156,254,0.2)",
+                    background: "rgba(113,113,122,0.1)",
+                    border: "1px solid rgba(113,113,122,0.2)",
                     borderRadius: 10,
                     display: "flex", alignItems: "center", justifyContent: "center",
                   }}>
-                    <Clock style={{ width: 15, height: 15, color: "#1d9cfe" }} />
+                    <Clock style={{ width: 15, height: 15, color: "#71717a" }} />
                   </div>
                   <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 15, fontWeight: 800, color: "#ffffff" }}>Office hours</h3>
                 </div>
@@ -165,8 +165,8 @@ export default function Contact() {
                   ))}
                 </div>
                 <div style={{ marginTop: 18, display: "flex", alignItems: "center", gap: 8 }}>
-                  <span style={{ width: 8, height: 8, background: "#1d9cfe", borderRadius: "50%", display: "inline-block", animation: "pulse-dot 2s infinite" }} />
-                  <span style={{ fontSize: 12, fontWeight: 600, color: "#1d9cfe" }}>Currently online</span>
+                  <span style={{ width: 8, height: 8, background: "#71717a", borderRadius: "50%", display: "inline-block", animation: "pulse-dot 2s infinite" }} />
+                  <span style={{ fontSize: 12, fontWeight: 600, color: "#71717a" }}>Currently online</span>
                 </div>
               </motion.div>
 
@@ -204,26 +204,26 @@ export default function Contact() {
             >
               <div style={{
                 position: "absolute", top: 0, left: 0, right: 0, height: 3,
-                background: "linear-gradient(90deg, #1d9cfe, #94a3b8, transparent)",
+                background: "linear-gradient(90deg, #71717a, #a1a1aa, transparent)",
               }} />
 
               {submitted ? (
                 <div style={{ textAlign: "center", padding: "60px 0" }}>
                   <div style={{
                     width: 72, height: 72,
-                    background: "rgba(29,156,254,0.15)",
-                    border: "2px solid rgba(29,156,254,0.4)",
+                    background: "rgba(113,113,122,0.15)",
+                    border: "2px solid rgba(113,113,122,0.4)",
                     borderRadius: "50%",
                     display: "flex", alignItems: "center", justifyContent: "center",
                     margin: "0 auto 24px",
-                    boxShadow: "0 0 30px rgba(29,156,254,0.2)",
+                    boxShadow: "0 0 30px rgba(113,113,122,0.2)",
                   }}>
-                    <CheckCircle style={{ width: 32, height: 32, color: "#1d9cfe" }} />
+                    <CheckCircle style={{ width: 32, height: 32, color: "#71717a" }} />
                   </div>
                   <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: 26, fontWeight: 800, color: "#ffffff", marginBottom: 12 }}>Message sent!</h2>
                   <p style={{ color: "#6b7280", marginBottom: 32, fontSize: 15 }}>We&apos;ll be in touch within a few hours.</p>
                   <button onClick={() => setSubmitted(false)}
-                    style={{ fontSize: 14, fontWeight: 700, color: "#1d9cfe", background: "none", border: "none", cursor: "pointer" }}>
+                    style={{ fontSize: 14, fontWeight: 700, color: "#71717a", background: "none", border: "none", cursor: "pointer" }}>
                     Send another message
                   </button>
                 </div>
@@ -238,7 +238,7 @@ export default function Contact() {
                         <label style={{ display: "block", fontSize: 12, fontWeight: 700, color: "#6b7280", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.06em" }}>Full name</label>
                         <input type="text" name="name" value={form.name} onChange={handleChange} required
                           placeholder="John Smith" style={inputStyle}
-                          onFocus={(e) => { e.target.style.borderColor = "rgba(29,156,254,0.5)"; e.target.style.boxShadow = "0 0 0 3px rgba(29,156,254,0.1)"; }}
+                          onFocus={(e) => { e.target.style.borderColor = "rgba(113,113,122,0.5)"; e.target.style.boxShadow = "0 0 0 3px rgba(113,113,122,0.1)"; }}
                           onBlur={(e) => { e.target.style.borderColor = "rgba(255,255,255,0.1)"; e.target.style.boxShadow = "none"; }}
                         />
                       </div>
@@ -246,7 +246,7 @@ export default function Contact() {
                         <label style={{ display: "block", fontSize: 12, fontWeight: 700, color: "#6b7280", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.06em" }}>Email address</label>
                         <input type="email" name="email" value={form.email} onChange={handleChange} required
                           placeholder="john@company.com" style={inputStyle}
-                          onFocus={(e) => { e.target.style.borderColor = "rgba(29,156,254,0.5)"; e.target.style.boxShadow = "0 0 0 3px rgba(29,156,254,0.1)"; }}
+                          onFocus={(e) => { e.target.style.borderColor = "rgba(113,113,122,0.5)"; e.target.style.boxShadow = "0 0 0 3px rgba(113,113,122,0.1)"; }}
                           onBlur={(e) => { e.target.style.borderColor = "rgba(255,255,255,0.1)"; e.target.style.boxShadow = "none"; }}
                         />
                       </div>
@@ -256,7 +256,7 @@ export default function Contact() {
                       <label style={{ display: "block", fontSize: 12, fontWeight: 700, color: "#6b7280", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.06em" }}>Service of interest</label>
                       <select name="service" value={form.service} onChange={handleChange} required
                         style={{ ...inputStyle, appearance: "none" as const, backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E\")", backgroundRepeat: "no-repeat", backgroundPosition: "right 14px center", backgroundSize: 16 }}
-                        onFocus={(e) => { e.target.style.borderColor = "rgba(29,156,254,0.5)"; }}
+                        onFocus={(e) => { e.target.style.borderColor = "rgba(113,113,122,0.5)"; }}
                         onBlur={(e) => { e.target.style.borderColor = "rgba(255,255,255,0.1)"; }}
                       >
                         <option value="" style={{ background: "#111111" }}>Select a service...</option>
@@ -269,7 +269,7 @@ export default function Contact() {
                       <textarea name="message" value={form.message} onChange={handleChange} required
                         rows={5} placeholder="Tell us about your business and what you need help with..."
                         style={{ ...inputStyle, resize: "none" }}
-                        onFocus={(e) => { e.target.style.borderColor = "rgba(29,156,254,0.5)"; e.target.style.boxShadow = "0 0 0 3px rgba(29,156,254,0.1)"; }}
+                        onFocus={(e) => { e.target.style.borderColor = "rgba(113,113,122,0.5)"; e.target.style.boxShadow = "0 0 0 3px rgba(113,113,122,0.1)"; }}
                         onBlur={(e) => { e.target.style.borderColor = "rgba(255,255,255,0.1)"; e.target.style.boxShadow = "none"; }}
                       />
                     </div>
@@ -277,12 +277,12 @@ export default function Contact() {
                     <button type="submit" disabled={loading}
                       style={{
                         display: "flex", alignItems: "center", justifyContent: "center", gap: 10,
-                        background: "linear-gradient(135deg, #1d9cfe, #94a3b8)",
+                        background: "linear-gradient(135deg, #71717a, #a1a1aa)",
                         color: "white", fontWeight: 700, fontSize: 16,
                         padding: "15px 28px", borderRadius: 12, border: "none",
                         cursor: loading ? "not-allowed" : "pointer",
                         opacity: loading ? 0.7 : 1,
-                        boxShadow: "0 4px 18px rgba(29,156,254,0.35)",
+                        boxShadow: "0 4px 18px rgba(113,113,122,0.35)",
                         transition: "all 0.25s ease",
                         fontFamily: "'Space Grotesk', sans-serif",
                         width: "100%",

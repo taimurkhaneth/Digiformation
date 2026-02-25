@@ -56,10 +56,10 @@ export function SiteNav() {
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
               style={{
                 width: 36, height: 36,
-                background: "linear-gradient(135deg, #1d9cfe, #94a3b8)",
+                background: "linear-gradient(135deg, #71717a, #a1a1aa)",
                 borderRadius: 10,
                 display: "flex", alignItems: "center", justifyContent: "center",
-                boxShadow: "0 0 20px rgba(29,156,254,0.4)",
+                boxShadow: "0 0 20px rgba(113,113,122,0.4)",
               }}
             >
               <Building2 style={{ color: "white", width: 18, height: 18 }} />
@@ -68,7 +68,7 @@ export function SiteNav() {
               fontFamily: "'Syne', sans-serif", fontWeight: 800,
               fontSize: 20, color: "#ffffff", letterSpacing: "-0.04em",
             }}>
-              Digi<span style={{ color: "#1d9cfe" }}>formation</span>
+              Digi<span style={{ color: "#71717a" }}>formation</span>
             </span>
           </Link>
 
@@ -83,7 +83,7 @@ export function SiteNav() {
                     fontFamily: "'Space Grotesk', sans-serif",
                     color: "#d1d5db", transition: "color 0.2s ease",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#1d9cfe")}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "#71717a")}
                   onMouseLeave={(e) => (e.currentTarget.style.color = "#d1d5db")}
                 >
                   {item.label}
@@ -163,7 +163,7 @@ export function SiteNav() {
           >
             <div style={{
               height: 2,
-              background: "linear-gradient(90deg, #1d9cfe, rgba(29,156,254,0.2), transparent)",
+              background: "linear-gradient(90deg, #71717a, rgba(113,113,122,0.2), transparent)",
               position: "absolute", top: 0, left: 0, right: 0,
             }} />
 
@@ -182,7 +182,7 @@ export function SiteNav() {
                   }}
                 >
                   {item.label}
-                  <ArrowRight style={{ width: 16, height: 16, color: "#1d9cfe" }} />
+                  <ArrowRight style={{ width: 16, height: 16, color: "#71717a" }} />
                 </Link>
               </motion.div>
             ))}

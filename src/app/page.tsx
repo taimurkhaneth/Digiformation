@@ -137,14 +137,14 @@ export default function Home() {
         <div style={{
           position: "absolute", top: "15%", right: "5%",
           width: 600, height: 600,
-          background: "radial-gradient(circle, rgba(29,156,254,0.1) 0%, transparent 65%)",
+          background: "radial-gradient(circle, rgba(113,113,122,0.1) 0%, transparent 65%)",
           borderRadius: "50%", filter: "blur(40px)", pointerEvents: "none",
           animation: "primary-breathe 8s ease-in-out infinite",
         }} />
         <div style={{
           position: "absolute", bottom: "10%", left: "-5%",
           width: 500, height: 500,
-          background: "radial-gradient(circle, rgba(29,156,254,0.06) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(113,113,122,0.06) 0%, transparent 70%)",
           borderRadius: "50%", filter: "blur(60px)", pointerEvents: "none",
         }} />
 
@@ -154,7 +154,7 @@ export default function Home() {
             {/* Badge */}
             <motion.div variants={fadeUp} style={{ marginBottom: 28 }}>
               <span className="section-label">
-                <span style={{ width: 7, height: 7, background: "#1d9cfe", borderRadius: "50%", display: "inline-block", animation: "pulse-dot 2s infinite" }} />
+                <span style={{ width: 7, height: 7, background: "#71717a", borderRadius: "50%", display: "inline-block", animation: "pulse-dot 2s infinite" }} />
                 Trusted by 500+ businesses worldwide
               </span>
             </motion.div>
@@ -172,7 +172,7 @@ export default function Home() {
             }}>
               Register your UK or US{" "}
               <span style={{
-                background: "linear-gradient(135deg, #1d9cfe 0%, #94a3b8 50%, #e2e8f0 100%)",
+                background: "linear-gradient(135deg, #71717a 0%, #a1a1aa 50%, #d4d4d8 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -207,7 +207,7 @@ export default function Home() {
             <motion.div variants={fadeUp} style={{ display: "flex", flexWrap: "wrap", gap: 16, alignItems: "center" }}>
               {["Companies House Certified", "HMRC Compliant", "IRS Approved", "24/7 Support"].map((t) => (
                 <div key={t} style={{ display: "flex", alignItems: "center", gap: 7 }}>
-                  <CheckCircle2 style={{ width: 15, height: 15, color: "#1d9cfe" }} />
+                  <CheckCircle2 style={{ width: 15, height: 15, color: "#71717a" }} />
                   <span style={{ fontSize: 13, fontWeight: 600, color: "#6b7280" }}>{t}</span>
                 </div>
               ))}
@@ -235,16 +235,16 @@ export default function Home() {
                   position: "relative", overflow: "hidden",
                   transition: "all 0.3s ease",
                 }}
-                whileHover={{ borderColor: "rgba(29,156,254,0.3)", y: -4 }}
+                whileHover={{ borderColor: "rgba(113,113,122,0.3)", y: -4 }}
               >
                 <div style={{
                   position: "absolute", top: 0, left: 0, right: 0, height: 2,
-                  background: "linear-gradient(90deg, #1d9cfe, transparent)",
+                  background: "linear-gradient(90deg, #71717a, transparent)",
                 }} />
                 <div style={{
                   fontSize: 42, fontWeight: 800, letterSpacing: "-0.05em", lineHeight: 1,
                   fontFamily: "'Syne', sans-serif",
-                  background: "linear-gradient(135deg, #1d9cfe, #94a3b8)",
+                  background: "linear-gradient(135deg, #71717a, #a1a1aa)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -352,8 +352,8 @@ export default function Home() {
                   <motion.div
                     whileHover={{
                       y: -6,
-                      borderColor: "rgba(29,156,254,0.3)",
-                      boxShadow: "0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(29,156,254,0.06)",
+                      borderColor: "rgba(113,113,122,0.3)",
+                      boxShadow: "0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(113,113,122,0.06)",
                     }}
                     style={{
                       background: "#111111",
@@ -370,14 +370,14 @@ export default function Home() {
                     {/* Gradient top stripe */}
                     <div style={{
                       position: "absolute", top: 0, left: 0, right: 0, height: 3,
-                      background: "linear-gradient(90deg, #1d9cfe, #94a3b8, transparent)",
+                      background: "linear-gradient(90deg, #71717a, #a1a1aa, transparent)",
                       borderRadius: "20px 20px 0 0",
                     }} />
 
                     {/* Inner glow on hover overlay */}
                     <div style={{
                       position: "absolute", inset: 0,
-                      background: "linear-gradient(135deg, rgba(29,156,254,0.04) 0%, transparent 60%)",
+                      background: "linear-gradient(135deg, rgba(113,113,122,0.04) 0%, transparent 60%)",
                       borderRadius: 20, opacity: 0,
                       transition: "opacity 0.3s",
                       pointerEvents: "none",
@@ -389,15 +389,15 @@ export default function Home() {
                       transition={{ type: "spring", stiffness: 400, damping: 17 }}
                       style={{
                         width: 56, height: 56,
-                        background: "rgba(29,156,254,0.1)",
-                        border: "1px solid rgba(29,156,254,0.2)",
+                        background: "rgba(113,113,122,0.1)",
+                        border: "1px solid rgba(113,113,122,0.2)",
                         borderRadius: 16,
                         display: "flex", alignItems: "center", justifyContent: "center",
                         marginBottom: 24,
                         flexShrink: 0,
                       }}
                     >
-                      <s.icon style={{ width: 26, height: 26, color: "#1d9cfe" }} />
+                      <s.icon style={{ width: 26, height: 26, color: "#71717a" }} />
                     </motion.div>
 
                     {/* Badge */}
@@ -405,9 +405,9 @@ export default function Home() {
                       display: "inline-flex", alignItems: "center",
                       fontSize: 10, fontWeight: 700,
                       letterSpacing: "0.06em", textTransform: "uppercase",
-                      color: "#1d9cfe",
-                      background: "rgba(29,156,254,0.1)",
-                      border: "1px solid rgba(29,156,254,0.2)",
+                      color: "#71717a",
+                      background: "rgba(113,113,122,0.1)",
+                      border: "1px solid rgba(113,113,122,0.2)",
                       padding: "3px 9px", borderRadius: 99,
                       marginBottom: 14, alignSelf: "flex-start",
                     }}>{s.badge}</span>
@@ -433,7 +433,7 @@ export default function Home() {
                       }}>{s.stat}</span>
                       <div style={{
                         display: "flex", alignItems: "center", gap: 5,
-                        color: "#1d9cfe", fontSize: 13, fontWeight: 700,
+                        color: "#71717a", fontSize: 13, fontWeight: 700,
                       }}>
                         Learn more <ArrowRight style={{ width: 14, height: 14 }} />
                       </div>
@@ -488,14 +488,14 @@ export default function Home() {
                   position: "relative", overflow: "hidden",
                   ...(i === 0 ? {
                     background: "linear-gradient(160deg, #05131e 0%, #111111 100%)",
-                    border: "1px solid rgba(29,156,254,0.2)",
+                    border: "1px solid rgba(113,113,122,0.2)",
                   } : {}),
                 }}
               >
                 {i === 0 && (
                   <div style={{
                     position: "absolute", top: 0, left: 0, right: 0, height: 2,
-                    background: "linear-gradient(90deg, #1d9cfe, #94a3b8, transparent)",
+                    background: "linear-gradient(90deg, #71717a, #a1a1aa, transparent)",
                   }} />
                 )}
 
@@ -504,14 +504,14 @@ export default function Home() {
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                   style={{
                     width: 48, height: 48,
-                    background: i === 0 ? "rgba(29,156,254,0.15)" : "rgba(29,156,254,0.08)",
-                    border: "1px solid rgba(29,156,254,0.2)",
+                    background: i === 0 ? "rgba(113,113,122,0.15)" : "rgba(113,113,122,0.08)",
+                    border: "1px solid rgba(113,113,122,0.2)",
                     borderRadius: 14,
                     display: "flex", alignItems: "center", justifyContent: "center",
                     marginBottom: 20,
                   }}
                 >
-                  <w.icon style={{ width: 22, height: 22, color: "#1d9cfe" }} />
+                  <w.icon style={{ width: 22, height: 22, color: "#71717a" }} />
                 </motion.div>
 
                 <div style={{
@@ -579,7 +579,7 @@ export default function Home() {
                   position: "absolute", top: 20, right: 24,
                   fontFamily: "'Syne', sans-serif",
                   fontSize: 80, fontWeight: 800, lineHeight: 1,
-                  color: "rgba(29,156,254,0.08)",
+                  color: "rgba(113,113,122,0.08)",
                   pointerEvents: "none",
                   userSelect: "none",
                 }}>
@@ -589,7 +589,7 @@ export default function Home() {
                 {/* Stars */}
                 <div style={{ display: "flex", gap: 3, marginBottom: 18 }}>
                   {[...Array(t.stars)].map((_, j) => (
-                    <Star key={j} style={{ width: 15, height: 15, color: "#1d9cfe", fill: "#1d9cfe" }} />
+                    <Star key={j} style={{ width: 15, height: 15, color: "#71717a", fill: "#71717a" }} />
                   ))}
                 </div>
 
@@ -603,11 +603,11 @@ export default function Home() {
                 <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
                   <div style={{
                     width: 44, height: 44, borderRadius: "50%",
-                    background: "linear-gradient(135deg, #1d9cfe, #94a3b8)",
+                    background: "linear-gradient(135deg, #71717a, #a1a1aa)",
                     display: "flex", alignItems: "center", justifyContent: "center",
                     fontFamily: "'Syne', sans-serif",
                     fontSize: 16, fontWeight: 800, color: "white",
-                    boxShadow: "0 0 16px rgba(29,156,254,0.3)",
+                    boxShadow: "0 0 16px rgba(113,113,122,0.3)",
                     flexShrink: 0,
                   }}>
                     {t.name[0]}
@@ -640,14 +640,14 @@ export default function Home() {
               textAlign: "center",
               position: "relative",
               overflow: "hidden",
-              border: "1px solid rgba(29,156,254,0.2)",
-              boxShadow: "0 0 0 1px rgba(29,156,254,0.08), 0 30px 80px rgba(0,0,0,0.6), 0 0 80px rgba(29,156,254,0.06)",
+              border: "1px solid rgba(113,113,122,0.2)",
+              boxShadow: "0 0 0 1px rgba(113,113,122,0.08), 0 30px 80px rgba(0,0,0,0.6), 0 0 80px rgba(113,113,122,0.06)",
             }}
           >
             {/* Grid overlay */}
             <div style={{
               position: "absolute", inset: 0,
-              backgroundImage: "linear-gradient(rgba(29,156,254,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(29,156,254,0.04) 1px, transparent 1px)",
+              backgroundImage: "linear-gradient(rgba(113,113,122,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(113,113,122,0.04) 1px, transparent 1px)",
               backgroundSize: "50px 50px",
               pointerEvents: "none",
             }} />
@@ -656,7 +656,7 @@ export default function Home() {
             <div style={{
               position: "absolute", top: -100, left: "50%", transform: "translateX(-50%)",
               width: 500, height: 300,
-              background: "radial-gradient(circle, rgba(29,156,254,0.15) 0%, transparent 70%)",
+              background: "radial-gradient(circle, rgba(113,113,122,0.15) 0%, transparent 70%)",
               filter: "blur(60px)",
               pointerEvents: "none",
             }} />
@@ -673,7 +673,7 @@ export default function Home() {
               }}>
                 Ready to launch your{" "}
                 <span style={{
-                  background: "linear-gradient(135deg, #1d9cfe, #94a3b8)",
+                  background: "linear-gradient(135deg, #71717a, #a1a1aa)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",

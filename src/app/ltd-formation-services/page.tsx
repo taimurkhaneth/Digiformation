@@ -37,7 +37,7 @@ const PACKAGES = [
   {
     name: "Silver", price: "200", emoji: "⭐",
     desc: "The complete package — most popular for global founders.",
-    color: "#1d9cfe",
+    color: "#71717a",
     features: [
       "Everything in Starter",
       "Digital + Printed Certificate",
@@ -109,7 +109,7 @@ export default function LTDFormation() {
         }} />
         <div style={{
           position: "absolute", top: -100, right: -100, width: 600, height: 400,
-          background: "radial-gradient(circle, rgba(29,156,254,0.1) 0%, transparent 65%)",
+          background: "radial-gradient(circle, rgba(113,113,122,0.1) 0%, transparent 65%)",
           filter: "blur(60px)", borderRadius: "50%", pointerEvents: "none",
         }} />
 
@@ -128,7 +128,7 @@ export default function LTDFormation() {
             }}>
               Register Your UK Limited{" "}
               <span style={{
-                background: "linear-gradient(135deg, #1d9cfe, #94a3b8)",
+                background: "linear-gradient(135deg, #71717a, #a1a1aa)",
                 WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
               }}>Company</span>
             </h1>
@@ -175,12 +175,12 @@ export default function LTDFormation() {
               >
                 <div style={{
                   width: 44, height: 44,
-                  background: "rgba(29,156,254,0.1)",
-                  border: "1px solid rgba(29,156,254,0.2)",
+                  background: "rgba(113,113,122,0.1)",
+                  border: "1px solid rgba(113,113,122,0.2)",
                   borderRadius: 12,
                   display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
                 }}>
-                  <f.icon style={{ width: 20, height: 20, color: "#1d9cfe" }} />
+                  <f.icon style={{ width: 20, height: 20, color: "#71717a" }} />
                 </div>
                 <div>
                   <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 14, color: "#ffffff", marginBottom: 3 }}>{f.label}</div>
@@ -222,23 +222,23 @@ export default function LTDFormation() {
               >
                 <div style={{
                   position: "absolute", top: 0, left: 0, right: 0, height: 3,
-                  background: `linear-gradient(90deg, #1d9cfe, #94a3b8, transparent)`,
+                  background: `linear-gradient(90deg, #71717a, #a1a1aa, transparent)`,
                 }} />
                 <span style={{
                   fontFamily: "'Syne', sans-serif",
                   fontSize: 56, fontWeight: 800, lineHeight: 1,
-                  color: "rgba(29,156,254,0.08)",
+                  color: "rgba(113,113,122,0.08)",
                   display: "block", marginBottom: 12,
                 }}>{step.num}</span>
                 <div style={{
                   width: 48, height: 48,
-                  background: "rgba(29,156,254,0.1)",
-                  border: "1px solid rgba(29,156,254,0.2)",
+                  background: "rgba(113,113,122,0.1)",
+                  border: "1px solid rgba(113,113,122,0.2)",
                   borderRadius: 14,
                   display: "flex", alignItems: "center", justifyContent: "center",
                   margin: "0 auto 16px",
                 }}>
-                  <step.icon style={{ width: 22, height: 22, color: "#1d9cfe" }} />
+                  <step.icon style={{ width: 22, height: 22, color: "#71717a" }} />
                 </div>
                 <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 17, fontWeight: 800, color: "#ffffff", marginBottom: 10 }}>{step.label}</div>
                 <p style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.65 }}>{step.desc}</p>
@@ -277,14 +277,14 @@ export default function LTDFormation() {
                     : "#111111",
                   borderRadius: 20,
                   border: pkg.popular
-                    ? "2px solid rgba(29,156,254,0.4)"
+                    ? "2px solid rgba(113,113,122,0.4)"
                     : "1px solid rgba(255,255,255,0.07)",
                   padding: "36px 28px",
                   display: "flex", flexDirection: "column",
                   position: "relative", overflow: "hidden",
                   height: "100%",
                   boxShadow: pkg.popular
-                    ? "0 0 0 1px rgba(29,156,254,0.1), 0 0 60px rgba(29,156,254,0.1), 0 30px 60px rgba(0,0,0,0.5)"
+                    ? "0 0 0 1px rgba(113,113,122,0.1), 0 0 60px rgba(113,113,122,0.1), 0 30px 60px rgba(0,0,0,0.5)"
                     : "0 4px 20px rgba(0,0,0,0.3)",
                   transition: "transform 0.3s ease",
                 }}>
@@ -299,9 +299,9 @@ export default function LTDFormation() {
                   {pkg.popular && (
                     <div style={{
                       position: "absolute", top: 16, right: 16,
-                      background: "rgba(29,156,254,0.15)",
-                      border: "1px solid rgba(29,156,254,0.3)",
-                      color: "#1d9cfe", fontSize: 10, fontWeight: 700,
+                      background: "rgba(113,113,122,0.15)",
+                      border: "1px solid rgba(113,113,122,0.3)",
+                      color: "#71717a", fontSize: 10, fontWeight: 700,
                       letterSpacing: "0.08em", textTransform: "uppercase",
                       padding: "4px 10px", borderRadius: 99,
                       display: "flex", alignItems: "center", gap: 5,
@@ -341,12 +341,12 @@ export default function LTDFormation() {
                       <li key={f} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                         <div style={{
                           width: 18, height: 18, flexShrink: 0, marginTop: 1,
-                          background: "rgba(29,156,254,0.15)",
-                          border: "1px solid rgba(29,156,254,0.3)",
+                          background: "rgba(113,113,122,0.15)",
+                          border: "1px solid rgba(113,113,122,0.3)",
                           borderRadius: "50%",
                           display: "flex", alignItems: "center", justifyContent: "center",
                         }}>
-                          <CheckCircle2 style={{ width: 11, height: 11, color: "#1d9cfe" }} />
+                          <CheckCircle2 style={{ width: 11, height: 11, color: "#71717a" }} />
                         </div>
                         <span style={{ fontSize: 13, color: "#d1d5db", lineHeight: 1.5 }}>{f}</span>
                       </li>
@@ -358,7 +358,7 @@ export default function LTDFormation() {
                     display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
                     padding: "13px 0",
                     background: pkg.popular
-                      ? "linear-gradient(135deg, #1d9cfe, #94a3b8)"
+                      ? "linear-gradient(135deg, #71717a, #a1a1aa)"
                       : "rgba(255,255,255,0.06)",
                     color: pkg.popular ? "#ffffff" : "#d1d5db",
                     fontFamily: "'Space Grotesk', sans-serif",
@@ -366,7 +366,7 @@ export default function LTDFormation() {
                     borderRadius: 12,
                     border: pkg.popular ? "none" : "1px solid rgba(255,255,255,0.1)",
                     transition: "all 0.25s ease",
-                    boxShadow: pkg.popular ? "0 4px 14px rgba(29,156,254,0.3)" : "none",
+                    boxShadow: pkg.popular ? "0 4px 14px rgba(113,113,122,0.3)" : "none",
                   }}
                     onMouseEnter={(e) => {
                       if (!pkg.popular) {
@@ -400,15 +400,15 @@ export default function LTDFormation() {
             style={{
               background: "linear-gradient(160deg, #05131e 0%, #030d14 100%)",
               borderRadius: 24, padding: "60px 40px", textAlign: "center",
-              border: "1px solid rgba(29,156,254,0.2)",
-              boxShadow: "0 0 60px rgba(29,156,254,0.06), 0 20px 60px rgba(0,0,0,0.5)",
+              border: "1px solid rgba(113,113,122,0.2)",
+              boxShadow: "0 0 60px rgba(113,113,122,0.06), 0 20px 60px rgba(0,0,0,0.5)",
               position: "relative", overflow: "hidden",
             }}
           >
             <div style={{
               position: "absolute", top: -60, left: "50%", transform: "translateX(-50%)",
               width: 400, height: 200,
-              background: "radial-gradient(circle, rgba(29,156,254,0.15) 0%, transparent 70%)",
+              background: "radial-gradient(circle, rgba(113,113,122,0.15) 0%, transparent 70%)",
               filter: "blur(40px)", pointerEvents: "none",
             }} />
             <div style={{ position: "relative", zIndex: 1 }}>
