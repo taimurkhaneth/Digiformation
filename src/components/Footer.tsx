@@ -87,8 +87,8 @@ export function Footer() {
               border: "1px solid rgba(113,113,122,0.2)",
               borderRadius: 8, padding: "8px 12px", marginBottom: 24,
             }}>
-              <div style={{ width: 7, height: 7, background: "#71717a", borderRadius: "50%", animation: "pulse-dot 2s infinite" }} />
-              <span style={{ fontSize: 11, fontWeight: 700, color: "#71717a", letterSpacing: "0.06em", textTransform: "uppercase" }}>
+              <div style={{ width: 7, height: 7, background: "#0073CF", borderRadius: "50%", animation: "pulse-dot 2s infinite" }} />
+              <span style={{ fontSize: 11, fontWeight: 700, color: "#0073CF", letterSpacing: "0.06em", textTransform: "uppercase" }}>
                 All services operational
               </span>
             </div>
@@ -260,7 +260,7 @@ export function Footer() {
                 <div style={{ fontSize: 11, color: "#4b5563", fontWeight: 600, letterSpacing: "0.04em", textTransform: "uppercase", marginBottom: 2 }}>
                   Company No.
                 </div>
-                <div style={{ fontSize: 13, color: "#9ca3af", fontWeight: 700 }}>16994903</div>
+                <div style={{ fontSize: 13, color: "#0073CF", fontWeight: 700 }}>16994903</div>
               </div>
             </div>
           </div>
