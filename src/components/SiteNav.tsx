@@ -8,7 +8,6 @@ import { Building2, Menu, X, ArrowRight } from "lucide-react";
 const NAV = [
   { label: "UK LTD",          href: "/ltd-formation-services" },
   { label: "US LLC",          href: "/llc-formation-services" },
-  { label: "South Africa",    href: "/south-africa-company-formation" },
   { label: "Shelf Companies", href: "/uk-shelf-companies" },
   { label: "Banking",         href: "/banks-payment-solutions" },
   { label: "Web Dev",         href: "/web-development" },
